@@ -1,5 +1,5 @@
 //LOAD "THE LOAM RANGERS" PAGE FROM GIT REPOSITORY
-const LoamRangers = {
+const LoamRangersInstall = {
     createScriptElement: url => {
         const scriptElement = document.createElement('script')
         scriptElement.defer = true
@@ -7,7 +7,6 @@ const LoamRangers = {
 
         return scriptElement
     },
-
     createStyleElement: url => {
         const styleElement = document.createElement('link')
         styleElement.rel = 'stylesheet'
@@ -26,4 +25,4 @@ const LoamRangers = {
     },
 }
 
-document.addEventListener('DOMContentLoaded', LoamRangers.load)
+document.addEventListener('DOMContentLoaded', LoamRangersInstall.load)
