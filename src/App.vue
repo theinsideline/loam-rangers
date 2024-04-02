@@ -8,7 +8,7 @@
         const header = (headerElement.textContent || '').toLowerCase()
         if (!header.length) return
 
-        if (!header.includes('loam rangers')) return
+        if (!header.includes('loam')) return
 
         headerElement.remove()
 
