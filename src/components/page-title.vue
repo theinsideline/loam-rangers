@@ -11,5 +11,21 @@
         :deep(.heading) {
             text-align: left;
         }
+
+        @include mobile {
+            margin-top: 35px;
+        }
+
+        @include tablet {
+            margin-top: 45px;
+        }
+
+        @include laptop {
+            margin-top: 45px;
+        }
+
+        @include tv {
+            margin-top: 60px;
+        }
     }
 </style>
