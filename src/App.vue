@@ -21,20 +21,25 @@
 
 <template>
     <PageTitle />
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <BikeBlock />
+    <TheLoamDeal />
+    <TheLatestVideo />
 </template>
 
 <script lang="ts">
     import { defineComponent } from 'vue'
-    import HelloWorld from './components/HelloWorld.vue'
     import PageTitle from './components/page-title.vue'
+    import BikeBlock from './components/bike-block/bike-block.vue'
+    import TheLoamDeal from './components/the-loam-deal.vue'
+    import TheLatestVideo from './components/the-latest-video.vue'
 
     export default defineComponent({
         name: 'App',
         components: {
-            HelloWorld,
             PageTitle,
+            BikeBlock,
+            TheLoamDeal,
+            TheLatestVideo,
         },
     })
 </script>
