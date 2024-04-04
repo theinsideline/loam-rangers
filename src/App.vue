@@ -20,6 +20,7 @@
 </script>
 
 <template>
+    <PageTitle />
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
 </template>
@@ -27,16 +28,18 @@
 <script lang="ts">
     import { defineComponent } from 'vue'
     import HelloWorld from './components/HelloWorld.vue'
+    import PageTitle from "./components/page-title.vue"
 
     export default defineComponent({
         name: 'App',
         components: {
             HelloWorld,
+            PageTitle
         },
     })
 </script>
 
-<style>
+<style lang="scss">
     .padding-top-null {
         padding-top: 0 !important;
     }
