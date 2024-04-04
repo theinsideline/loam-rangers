@@ -24,6 +24,10 @@
             margin-top: 45px;
         }
 
+        @include desktop {
+            margin-top: 45px;
+        }
+
         @include tv {
             margin-top: 60px;
         }
