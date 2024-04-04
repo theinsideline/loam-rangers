@@ -8,7 +8,7 @@
 
 <style scoped lang="scss">
     .page-title {
-        :deep(h1) {
+        :deep(.heading) {
             text-align: left;
         }
     }
