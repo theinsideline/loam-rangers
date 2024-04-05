@@ -154,6 +154,10 @@
                     display: flex;
                     width: 223px;
                     margin: 0;
+
+                    &::before {
+                        display: none;
+                    }
                 }
 
                 @include mobile {
