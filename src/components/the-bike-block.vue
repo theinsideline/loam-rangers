@@ -194,6 +194,23 @@
                 }
             }
 
+            :deep(.p-galleria-item-wrapper) {
+                @include mobile {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+
+                @include tablet {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+
+                @include laptop {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+
             .gallery {
                 width: 100%;
                 max-height: 549px;
