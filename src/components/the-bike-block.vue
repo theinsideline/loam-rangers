@@ -177,6 +177,7 @@
                     flex-direction: column;
 
                     li {
+                        padding: 0 !important;
                         width: 100%;
                     }
                 }
@@ -189,6 +190,7 @@
                     grid-column-gap: 15px;
 
                     li {
+                        padding: 0 !important;
                         width: 100%;
                     }
                 }
