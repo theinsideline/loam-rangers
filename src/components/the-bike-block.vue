@@ -154,6 +154,7 @@
                     display: flex;
                     width: 223px;
                     margin: 0;
+                    padding: 0 !important;
 
                     &::before {
                         display: none;
@@ -166,7 +167,6 @@
                     flex-direction: column;
 
                     li {
-                        padding: 0 !important;
                         width: 100%;
                     }
                 }
@@ -177,7 +177,6 @@
                     flex-direction: column;
 
                     li {
-                        padding: 0 !important;
                         width: 100%;
                     }
                 }
@@ -190,8 +189,15 @@
                     grid-column-gap: 15px;
 
                     li {
-                        padding: 0 !important;
                         width: 100%;
+                    }
+                }
+
+                @include desktop {
+                    &:last-child {
+                        .gallery_button {
+                            padding: 0 !important;
+                        }
                     }
                 }
             }
@@ -221,11 +227,13 @@
                 @include desktop {
                     display: flex;
                     flex-direction: row-reverse;
+                    align-items: center;
                 }
 
                 @include tv {
                     display: flex;
                     flex-direction: row-reverse;
+                    align-items: center;
                 }
             }
 
@@ -279,7 +287,7 @@
                     padding-bottom: 15px;
 
                     a {
-                        font-size: 14px 
+                        font-size: 14px;
                     }
                 }
 
@@ -287,7 +295,7 @@
                     padding-bottom: 15px;
 
                     a {
-                        font-size: 14px 
+                        font-size: 14px;
                     }
                 }
 
@@ -295,7 +303,7 @@
                     padding: 0;
 
                     a {
-                        font-size: 14px 
+                        font-size: 14px;
                     }
                 }
             }
