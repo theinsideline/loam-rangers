@@ -104,219 +104,209 @@
 
 <template>
     <section class="bike-block">
-        <Heading2 text="Bike block" />
-
-        <div class="bike-block__content">
-            <Galleria
-                v-model:activeIndex="activeIndex"
-                :value="images"
-                :responsiveOptions
-                :showThumbnails="false"
-                showIndicators
-                :showIndicatorsOnItem="false"
-                :indicatorsPosition
-                containerClass="gallery"
-                :transitionInterval="5000"
-            >
-                <template #item="slotProps">
-                    <img
-                        :src="slotProps.item.itemImageSrc"
-                        :alt="slotProps.item.alt"
-                        style="width: 100%; display: block; max-height: 549px"
-                    />
-                </template>
-                <template #indicator="{ index }">
-                    <div
-                        v-if="images[index].button.link"
-                        class="gallery_button"
-                        @mouseover="() => changeIndex(index)"
-                        @mouseleave="() => changeIndex(0)"
-                    >
-                        <a :href="images[index].button.link">{{ images[index].title }}</a>
-                    </div>
-                </template>
-            </Galleria>
-        </div>
+        <Galleria
+            v-model:activeIndex="activeIndex"
+            :value="images"
+            :responsiveOptions
+            :showThumbnails="false"
+            showIndicators
+            :showIndicatorsOnItem="false"
+            :indicatorsPosition
+            containerClass="gallery"
+            :transitionInterval="5000"
+        >
+            <template #item="slotProps">
+                <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block; max-height: 549px" />
+            </template>
+            <template #indicator="{ index }">
+                <div
+                    v-if="images[index].button.link"
+                    class="gallery_button"
+                    @mouseover="() => changeIndex(index)"
+                    @mouseleave="() => changeIndex(0)"
+                >
+                    <a :href="images[index].button.link">{{ images[index].title }}</a>
+                </div>
+            </template>
+        </Galleria>
     </section>
 </template>
 
 <style scoped lang="scss">
     .bike-block {
-        &__content {
-            :deep(.p-galleria-item-container) {
-                width: 100%;
-            }
+        :deep(.p-galleria-item-container) {
+            width: 100%;
+        }
 
-            :deep(.p-galleria-indicators) {
-                background: none;
+        :deep(.p-galleria-indicators) {
+            background: none;
 
-                li {
-                    display: flex;
-                    width: 223px;
-                    margin: 0;
-                    padding: 0 !important;
+            li {
+                display: flex;
+                width: 223px;
+                margin: 0;
+                padding: 0 !important;
 
-                    &::before {
-                        display: none;
-                    }
-                }
-
-                @include mobile {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-
-                    li {
-                        width: 100%;
-                    }
-                }
-
-                @include tablet {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-
-                    li {
-                        width: 100%;
-                    }
-                }
-
-                @include laptop {
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    grid-row-gap: 15px;
-                    grid-column-gap: 15px;
-
-                    li {
-                        width: 100%;
-                    }
-                }
-
-                @include desktop {
-                    margin-bottom: 0;
-
-                    li:last-child {
-                        .gallery_button {
-                            padding: 0 !important;
-                        }
-                    }
-                }
-
-                @include tv {
-                    margin-bottom: 0;
-
-                    li:last-child {
-                        .gallery_button {
-                            padding: 0 !important;
-                        }
-                    }
+                &::before {
+                    display: none;
                 }
             }
 
-            :deep(.p-galleria-item-wrapper) {
-                .p-galleria-item {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                @include mobile {
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
-
-                @include tablet {
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
-
-                @include laptop {
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
-
-                @include desktop {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                }
-
-                @include tv {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                }
-            }
-
-            .gallery {
-                width: 100%;
-                max-height: 549px;
-
-                @include mobile {
-                    max-height: none;
-                }
-
-                @include tablet {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-
-                    li {
-                        width: 100%;
-                    }
-                }
-            }
-
-            .gallery_button {
+            @include mobile {
                 width: 100%;
                 display: flex;
-                background-color: white;
-                padding-bottom: 20px;
+                flex-direction: column;
+
+                li {
+                    width: 100%;
+                }
+            }
+
+            @include tablet {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    width: 100%;
+                }
+            }
+
+            @include laptop {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-row-gap: 15px;
+                grid-column-gap: 15px;
+
+                li {
+                    width: 100%;
+                }
+            }
+
+            @include desktop {
+                margin-bottom: 0;
+
+                li:last-child {
+                    .gallery_button {
+                        padding: 0 !important;
+                    }
+                }
+            }
+
+            @include tv {
+                margin-bottom: 0;
+
+                li:last-child {
+                    .gallery_button {
+                        padding: 0 !important;
+                    }
+                }
+            }
+        }
+
+        :deep(.p-galleria-item-wrapper) {
+            .p-galleria-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @include mobile {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            @include tablet {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            @include laptop {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            @include desktop {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+
+            @include tv {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
+
+        .gallery {
+            width: 100%;
+            max-height: 549px;
+
+            @include mobile {
+                max-height: none;
+            }
+
+            @include tablet {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    width: 100%;
+                }
+            }
+        }
+
+        .gallery_button {
+            width: 100%;
+            display: flex;
+            background-color: white;
+            padding-bottom: 20px;
+
+            a {
+                color: #161616;
+                padding-top: 14px;
+                padding-bottom: 15px;
+                text-align: center;
+                width: 100%;
+                background-color: #e7e7e7;
+                text-decoration: none;
+                font-weight: 650;
+                font-family: Inter;
+                font-size: 18px;
+            }
+
+            &:hover {
+                a {
+                    background-color: #1aae82;
+                    color: white;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            @include mobile {
+                padding-bottom: 15px;
 
                 a {
-                    color: #161616;
-                    padding-top: 14px;
-                    padding-bottom: 15px;
-                    text-align: center;
-                    width: 100%;
-                    background-color: #e7e7e7;
-                    text-decoration: none;
-                    font-weight: 650;
-                    font-family: Inter;
-                    font-size: 18px;
+                    font-size: 14px;
                 }
+            }
 
-                &:hover {
-                    a {
-                        background-color: #1aae82;
-                        color: white;
-                        transition: all 0.3s ease-in-out;
-                    }
+            @include tablet {
+                padding-bottom: 15px;
+
+                a {
+                    font-size: 14px;
                 }
+            }
 
-                @include mobile {
-                    padding-bottom: 15px;
+            @include laptop {
+                padding: 0;
 
-                    a {
-                        font-size: 14px;
-                    }
-                }
-
-                @include tablet {
-                    padding-bottom: 15px;
-
-                    a {
-                        font-size: 14px;
-                    }
-                }
-
-                @include laptop {
-                    padding: 0;
-
-                    a {
-                        font-size: 14px;
-                    }
+                a {
+                    font-size: 14px;
                 }
             }
         }
