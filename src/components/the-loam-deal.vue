@@ -5,6 +5,13 @@
 <template>
     <section class="loam-deal">
         <Heading2 text="The Loam Deal" />
+
+        <div class="loam-deal__content">
+            <div class="content content__video">
+                <img src="/icons/play_button.svg" alt="play_button" />
+            </div>
+            <div class="content content__form"></div>
+        </div>
     </section>
 </template>
 
@@ -28,6 +35,27 @@
 
         @include tv {
             margin-top: 65px;
+        }
+
+        .content {
+            width: 50%;
+        }
+
+        &__content {
+            display: flex;
+
+            .content__video {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: green;
+                height: 600px;
+                // background-image: url("/images/preview.png");
+            }
+
+            .content__form {
+                background-color: #161616;
+            }
         }
     }
 </style>
