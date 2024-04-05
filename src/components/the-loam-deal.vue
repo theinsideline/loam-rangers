@@ -24,6 +24,28 @@
             <div class="content content__form"></div>
         </div>
     </section>
+    <div id="modalFeatureVideo11" class="modal modal-video js-modal js-modal-video" data-animation="on">
+        <div
+            class="modal-video__content max-width-md js-modal-video__content"
+            tabindex="-1"
+            role="alertdialog"
+            aria-describedby="modalVideoDescription1"
+        >
+            <p id="modalVideoDescription1" class="sr-only">A video is being shown</p>
+            <div class="media-wrapper">
+                <iframe
+                    class="js-modal-video__media"
+                    src=""
+                    width="640"
+                    height="360"
+                    frameborder="0"
+                    allowfullscreen="allowfullscreen"
+                ></iframe>
+            </div>
+        </div>
+        <div class="modal-video__loader" aria-hidden="true"> </div>
+        <button class="reset modal__close-btn js-modal__close"></button>
+    </div>
 </template>
 
 <style scoped lang="scss">
