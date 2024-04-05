@@ -3,6 +3,7 @@
     import { Heading2 } from '@theinsideline/common'
     import { ref } from 'vue'
     import Galleria from 'primevue/galleria'
+    import 'primevue/resources/themes/aura-light-green/theme.css'
 
     const previewUrl = ref(`${PUBLIC_DOMAIN}/images/preview.png`)
     const displayBasic = ref(false)
