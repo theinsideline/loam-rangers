@@ -229,7 +229,7 @@
                     a {
                         background-color: #1aae82;
                         color: white;
-                        transition: all .3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
                     }
                 }
 
