@@ -1,5 +1,9 @@
 <script setup lang="ts">
+    import { PUBLIC_DOMAIN } from '@/constants'
     import { Heading2 } from '@theinsideline/common'
+    import { ref } from 'vue'
+
+    const previewUrl = ref(`${PUBLIC_DOMAIN}/images/preview.png`)
 </script>
 
 <template>
@@ -7,9 +11,16 @@
         <Heading2 text="The Loam Deal" />
 
         <div class="loam-deal__content">
-            <div class="content content__video">
+            <a
+                class="content content__video"
+                role="button"
+                href="#0"
+                data-url="https://www.youtube.com/watch?v=ocp5ynefpDk"
+                aria-controls="modalFeatureVideo11"
+                :style="`background-image: url(${previewUrl});`"
+            >
                 <img src="/icons/play_button.svg" alt="play_button" />
-            </div>
+            </a>
             <div class="content content__form"></div>
         </div>
     </section>
@@ -48,9 +59,20 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: green;
                 height: 600px;
-                // background-image: url("/images/preview.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                img {
+                    transition: transform 0.3s linear;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                        transition: transform 0.3s linear;
+                    }
+                }
             }
 
             .content__form {
