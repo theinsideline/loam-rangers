@@ -19,7 +19,7 @@
                 aria-controls="modalFeatureVideo11"
                 :style="`background-image: url(${previewUrl});`"
             >
-                <img src="/icons/play_button.svg" alt="play_button" />
+                <img :src="`${PUBLIC_DOMAIN}/icons/play_button.svg`" alt="play_button" />
             </a>
             <div class="content content__form"></div>
         </div>
