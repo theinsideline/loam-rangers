@@ -19,35 +19,18 @@
         <Heading2 text="The Loam Deal" />
 
         <div class="loam-deal__content">
-            <div class="content content__video" :style="`background-image: url(${previewUrl});`" @click="displayBasic = true">
+            <a
+                class="content content__video"
+                :style="`background-image: url(${previewUrl});`"
+                role="button"
+                href="#0"
+                aria-controls="modalFeatureVideo11"
+                data-url="https://www.youtube.com/watch?v=ocp5ynefpDk"
+            >
                 <img :src="`${PUBLIC_DOMAIN}/icons/play_button.svg`" alt="play_button" />
-            </div>
+            </a>
             <div class="content content__form"></div>
         </div>
-        <Galleria
-            v-model:visible="displayBasic"
-            :value="images"
-            :fullScreen="true"
-            :circular="true"
-            :showItemNavigators="false"
-            :showThumbnailNavigators="false"
-            :showThumbnails="false"
-            containerStyle="max-width: 50%"
-        >
-            <template #item="slotProps">
-                <div>
-                    <iframe
-                        id="ytplayer"
-                        type="text/html"
-                        width="1024"
-                        height="576"
-                        src="https://www.youtube.com/embed/ocp5ynefpDk"
-                        frameborder="0"
-                        allowfullscreen
-                    />
-                </div>
-            </template>
-        </Galleria>
     </section>
 </template>
 
