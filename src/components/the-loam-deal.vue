@@ -12,7 +12,7 @@
 
         <div class="loam-deal__content">
             <a
-                class="content content__video"
+                class="content content__video play__wrapper"
                 role="button"
                 href="#0"
                 data-url="https://www.youtube.com/watch?v=ocp5ynefpDk"
