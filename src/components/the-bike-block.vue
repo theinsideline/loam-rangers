@@ -1,6 +1,5 @@
 <script setup lang="ts">
     import { ref, onMounted } from 'vue'
-    import { Heading2 } from '@theinsideline/common'
     import Galleria from 'primevue/galleria'
     import { useWindowSize } from '@vueuse/core'
     import { computed } from 'vue'
