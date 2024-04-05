@@ -4,12 +4,13 @@
     import Galleria from 'primevue/galleria'
     import { useWindowSize } from '@vueuse/core'
     import { computed } from 'vue'
+    import { PUBLIC_DOMAIN } from '../constants'
 
     const { width } = useWindowSize()
 
     const images = ref([
         {
-            itemImageSrc: 'icons/loam-bike.svg',
+            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-bike.svg`,
             alt: 'loam-bike',
             title: 'Bike',
             button: {
@@ -18,7 +19,7 @@
             },
         },
         {
-            itemImageSrc: 'icons/loam-ibis.svg',
+            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-ibis.svg`,
             alt: 'loam-bike',
             title: 'Ibis',
             button: {
@@ -27,7 +28,7 @@
             },
         },
         {
-            itemImageSrc: 'icons/loam-manitou.svg',
+            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-manitou.svg`,
             alt: 'loam-bike',
             title: 'Manitou',
             button: {
@@ -36,7 +37,7 @@
             },
         },
         {
-            itemImageSrc: 'icons/loam-hayes-trp.svg',
+            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-hayes-trp.svg`,
             alt: 'loam-bike',
             title: 'Hayes / TPR',
             button: {
@@ -45,7 +46,7 @@
             },
         },
         {
-            itemImageSrc: 'icons/loam-sdg.svg',
+            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-sdg.svg`,
             alt: 'loam-bike',
             title: 'SDG',
             button: {
@@ -54,7 +55,7 @@
             },
         },
         {
-            itemImageSrc: 'icons/loam-michelin.svg',
+            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-michelin.svg`,
             alt: 'loam-bike',
             title: 'Michelin',
             button: {
@@ -63,7 +64,7 @@
             },
         },
         {
-            itemImageSrc: 'icons/loam-ride-nf.svg',
+            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-ride-nf.svg`,
             alt: 'loam-bike',
             title: 'Ride NF',
             button: {
