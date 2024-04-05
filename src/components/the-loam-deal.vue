@@ -35,15 +35,17 @@
             containerStyle="max-width: 50%"
         >
             <template #item="slotProps">
-                <iframe
-                    id="ytplayer"
-                    type="text/html"
-                    width="1024"
-                    height="576"
-                    src="https://www.youtube.com/embed/ocp5ynefpDk"
-                    frameborder="0"
-                    allowfullscreen
-                />
+                <div>
+                    <iframe
+                        id="ytplayer"
+                        type="text/html"
+                        width="1024"
+                        height="576"
+                        src="https://www.youtube.com/embed/ocp5ynefpDk"
+                        frameborder="0"
+                        allowfullscreen
+                    />
+                </div>
             </template>
         </Galleria>
     </section>
