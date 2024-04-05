@@ -166,6 +166,7 @@
                     flex-direction: column;
 
                     li {
+                        padding: 0 !important;
                         width: 100%;
                     }
                 }
