@@ -194,7 +194,15 @@
                 }
 
                 @include desktop {
-                    &:last-child {
+                    li:last-child {
+                        .gallery_button {
+                            padding: 0 !important;
+                        }
+                    }
+                }
+
+                @include tv {
+                    li:last-child {
                         .gallery_button {
                             padding: 0 !important;
                         }
