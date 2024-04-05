@@ -33,14 +33,7 @@
         >
             <p id="modalVideoDescription1" class="sr-only">A video is being shown</p>
             <div class="media-wrapper">
-                <iframe
-                    class="js-modal-video__media"
-                    src=""
-                    width="640"
-                    height="360"
-                    frameborder="0"
-                    allowfullscreen="allowfullscreen"
-                ></iframe>
+                <iframe class="js-modal-video__media" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         <div class="modal-video__loader" aria-hidden="true"> </div>
