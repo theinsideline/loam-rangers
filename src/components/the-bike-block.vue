@@ -194,6 +194,8 @@
                 }
 
                 @include desktop {
+                    margin-bottom: 0;
+
                     li:last-child {
                         .gallery_button {
                             padding: 0 !important;
@@ -202,6 +204,8 @@
                 }
 
                 @include tv {
+                    margin-bottom: 0;
+
                     li:last-child {
                         .gallery_button {
                             padding: 0 !important;
