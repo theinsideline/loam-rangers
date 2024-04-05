@@ -197,6 +197,12 @@
             }
 
             :deep(.p-galleria-item-wrapper) {
+                .p-galleria-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 @include mobile {
                     display: flex;
                     flex-direction: column-reverse;
@@ -210,6 +216,16 @@
                 @include laptop {
                     display: flex;
                     flex-direction: column-reverse;
+                }
+
+                @include desktop {
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+
+                @include tv {
+                    display: flex;
+                    flex-direction: row-reverse;
                 }
             }
 
@@ -246,8 +262,9 @@
                     width: 100%;
                     background-color: #e7e7e7;
                     text-decoration: none;
-                    font-weight: bold;
+                    font-weight: 650;
                     font-family: Inter;
+                    font-size: 18px;
                 }
 
                 &:hover {
@@ -260,14 +277,26 @@
 
                 @include mobile {
                     padding-bottom: 15px;
+
+                    a {
+                        font-size: 14px 
+                    }
                 }
 
                 @include tablet {
                     padding-bottom: 15px;
+
+                    a {
+                        font-size: 14px 
+                    }
                 }
 
                 @include laptop {
                     padding: 0;
+
+                    a {
+                        font-size: 14px 
+                    }
                 }
             }
         }
