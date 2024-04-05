@@ -20,24 +20,24 @@
 </script>
 
 <template>
-    <PageTitle />
-    <BikeBlock />
+    <ThePageTitle />
+    <TheBikeBlock />
     <TheLoamDeal />
     <TheLatestVideo />
 </template>
 
 <script lang="ts">
     import { defineComponent } from 'vue'
-    import PageTitle from './components/page-title.vue'
-    import BikeBlock from './components/bike-block/bike-block.vue'
+    import ThePageTitle from './components/the-page-title.vue'
+    import TheBikeBlock from './components/the-bike-block.vue'
     import TheLoamDeal from './components/the-loam-deal.vue'
     import TheLatestVideo from './components/the-latest-video.vue'
 
     export default defineComponent({
         name: 'App',
         components: {
-            PageTitle,
-            BikeBlock,
+            ThePageTitle,
+            TheBikeBlock,
             TheLoamDeal,
             TheLatestVideo,
         },

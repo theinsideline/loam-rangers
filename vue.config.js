@@ -15,6 +15,7 @@ module.exports = defineConfig({
     loaderOptions: {
       sass: {
         additionalData: `
+        @import 'primevue/resources/themes/aura-light-green/theme.css';
         @import "@theinsideline/common/style.css";
         @import "@theinsideline/common/scss/main.scss";
           `,
