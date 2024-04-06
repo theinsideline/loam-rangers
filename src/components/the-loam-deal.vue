@@ -40,30 +40,28 @@
                 <form
                     ref="form"
                     id="mc-embedded-subscribe-form"
-                    class="validate"
+                    class="form__content"
                     action="https://theinsideline.us19.list-manage.com/subscribe/post?u=e9725cd77be1f8c021f70bbbf&amp;id=f755cf2c83&amp;f_id=001ab4e4f0"
                     method="post"
                     name="mc-embedded-subscribe-form"
                     target="_self"
                 >
-                    <div id="mc_embed_signup_scroll" class="form__content">
-                        <div class="mc-field-group">
-                            <input
-                                id="mce-EMAIL"
-                                class="required email loam-email"
-                                style="padding: 1rem"
-                                name="EMAIL"
-                                type="email"
-                                value=""
-                                placeholder="Your Email Address"
-                            />
-                        </div>
-                        <LinkButton type="submit" class="submit-button" text="Subscribe" @click.prevent="signIn" />
+                    <div class="mc-field-group">
+                        <input
+                            id="mce-EMAIL"
+                            class="required email loam-email"
+                            style="padding: 1rem"
+                            name="EMAIL"
+                            type="email"
+                            value=""
+                            placeholder="Your Email Address"
+                        />
+                    </div>
+                    <LinkButton type="submit" class="submit-button" text="Subscribe" @click.prevent="signIn" />
 
-                        <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
-                        <div style="position: absolute; left: -5000px" aria-hidden="true">
-                            <input tabindex="-1" name="b_e9725cd77be1f8c021f70bbbf_f755cf2c83" type="text" value="" />
-                        </div>
+                    <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
+                    <div style="position: absolute; left: -5000px" aria-hidden="true">
+                        <input tabindex="-1" name="b_e9725cd77be1f8c021f70bbbf_f755cf2c83" type="text" value="" />
                     </div>
                 </form>
             </div>
@@ -194,15 +192,12 @@
                     }
                 }
 
-                .validate {
+                .form__content {
                     width: 100%;
-
-                    .form__content {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                    }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
 
                     .mc-field-group {
                         width: 100%;
