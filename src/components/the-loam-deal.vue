@@ -123,7 +123,7 @@
                 flex-direction: column;
             }
 
-            @include tablet {
+            @include laptop {
                 flex-direction: column;
             }
 
@@ -210,6 +210,10 @@
                     @include tablet {
                         margin-bottom: 25px;
                     }
+
+                    @include laptop {
+                        margin-bottom: 30px;
+                    }
                 }
 
                 .form__content {
@@ -252,6 +256,17 @@
                                 font-size: 16px;
                             }
                         }
+
+                        @include tablet {
+                            margin-bottom: 20px;
+
+                            input {
+                                padding-left: 20px;
+                                padding-bottom: 12px;
+                                padding-top: 13px;
+                                font-size: 16px;
+                            }
+                        }
                     }
 
                     .submit-button {
@@ -268,6 +283,11 @@
 
                         @include tablet {
                             width: 100%;
+                        }
+
+                        @include laptop {
+                            width: 100%;
+                            max-width: 300px;
                         }
                     }
                 }
