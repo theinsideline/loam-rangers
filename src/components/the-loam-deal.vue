@@ -186,11 +186,11 @@
                             margin-bottom: 20px;
 
                             input {
-                                padding-left: 20px
+                                padding-left: 20px;
                                 padding-bottom: 12px;
                                 padding-top: 13px;
                                 margin: 0;
-                                font-size: 16px
+                                font-size: 16px;
                             }
                         }
                     }
