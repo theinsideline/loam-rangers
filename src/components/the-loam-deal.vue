@@ -82,10 +82,6 @@
 
 <style scoped lang="scss">
     .loam-deal {
-        :deep(.p-galleria-mask) {
-            width: 100%;
-        }
-
         @include mobile {
             margin-top: 35px;
         }
@@ -104,22 +100,6 @@
 
         @include tv {
             margin-top: 65px;
-        }
-
-        &__modal {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 9999;
-            width: 100vw;
-            height: 100vh;
-            background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.6);
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .content {
@@ -224,6 +204,22 @@
                     }
                 }
             }
+        }
+
+        &__modal {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            width: 100vw;
+            height: 100vh;
+            background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.6);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 </style>
