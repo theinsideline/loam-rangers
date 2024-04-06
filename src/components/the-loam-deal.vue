@@ -171,7 +171,7 @@
                 }
 
                 @include desktop {
-                    height: 600px;
+                    height: 500px;
                 }
             }
 
@@ -197,8 +197,8 @@
                 }
 
                 @include desktop {
-                    padding: 90px;
-                    height: 600px;
+                    padding: 60px;
+                    height: 500px;
                 }
 
                 :deep(.heading_3) {
