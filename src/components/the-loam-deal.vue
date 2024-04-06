@@ -223,6 +223,10 @@
                         :deep {
                             color: #161616;
                         }
+
+                        @include mobile {
+                            width: 100%;
+                        }
                     }
                 }
             }
