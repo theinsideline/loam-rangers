@@ -101,12 +101,21 @@
                 width: 100%;
                 height: 340px !important;
             }
+
+            @include tablet {
+                width: 100%;
+                height: 340px !important;
+            }
         }
 
         &__content {
             display: flex;
 
             @include mobile {
+                flex-direction: column;
+            }
+
+            @include tablet {
                 flex-direction: column;
             }
 
@@ -132,6 +141,11 @@
                         width: 62px;
                         height: 62px;
                     }
+
+                    @include tablet {
+                        width: 62px;
+                        height: 62px;
+                    }
                 }
             }
 
@@ -144,6 +158,10 @@
                 padding: 100px;
 
                 @include mobile {
+                    padding: 20px;
+                }
+
+                @include tablet {
                     padding: 20px;
                 }
 
@@ -164,6 +182,10 @@
                     }
 
                     @include mobile {
+                        margin-bottom: 25px;
+                    }
+
+                    @include tablet {
                         margin-bottom: 25px;
                     }
                 }
@@ -197,6 +219,17 @@
                                 font-size: 16px;
                             }
                         }
+
+                        @include tablet {
+                            margin-bottom: 20px;
+
+                            input {
+                                padding-left: 20px;
+                                padding-bottom: 12px;
+                                padding-top: 13px;
+                                font-size: 16px;
+                            }
+                        }
                     }
 
                     .submit-button {
@@ -208,6 +241,10 @@
                         }
 
                         @include mobile {
+                            width: 100%;
+                        }
+
+                        @include tablet {
                             width: 100%;
                         }
                     }
