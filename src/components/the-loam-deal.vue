@@ -257,8 +257,9 @@
                             }
                         }
 
-                        @include tablet {
+                        @include laptop {
                             margin-bottom: 20px;
+                            max-width: 548px;
 
                             input {
                                 padding-left: 20px;
