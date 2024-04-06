@@ -114,6 +114,10 @@
 
         .content {
             width: 50%;
+
+            @include mobile {
+                width: 100%;
+            }
         }
 
         &__modal {
@@ -134,6 +138,10 @@
 
         &__content {
             display: flex;
+
+            @include mobile {
+                flex-direction: column;
+            }
 
             .content__video {
                 display: flex;
