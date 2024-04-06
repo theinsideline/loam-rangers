@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { LATEST_VIDEO } from '@/constants'
-    import { Heading2, LinkButton, Paragraph } from '@theinsideline/common'
+    import { Heading3, LinkButton, Paragraph } from '@theinsideline/common'
 </script>
 
 <template>
@@ -9,7 +9,7 @@
 
         <div class="lates-video__content">
             <div class="content content__title" :style="`background: ${LATEST_VIDEO.BACKGROUND};`">
-                <Heading2 :text="LATEST_VIDEO.TITLE" />
+                <Heading3 :text="LATEST_VIDEO.TITLE" />
                 <Paragraph :text="LATEST_VIDEO.DESCRIPTION" />
                 <LinkButton color="white" :link="LATEST_VIDEO.VIDEO_LINK" text="Watch now" />
             </div>
@@ -28,6 +28,18 @@
             width: 50%;
         }
 
+        .content__title {
+            :deep(.heading_3) {
+                h3 {
+                    color: white;
+                }
+            }
+
+            :deep(.paragraph) {
+                color: white;
+            }
+        }
+
         .content__preview {
             background-position: center;
             background-repeat: no-repeat;
@@ -38,6 +50,7 @@
             margin-top: 35px;
 
             &__content {
+                display: flex;
                 flex-direction: column-reverse;
             }
 
