@@ -125,6 +125,7 @@
             }
 
             .content__title {
+                padding: 40px;
                 height: 350px;
 
                 .description {
