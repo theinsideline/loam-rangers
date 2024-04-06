@@ -49,7 +49,7 @@
                     <div class="mc-field-group">
                         <input id="mce-EMAIL" name="EMAIL" type="email" value="" placeholder="Your Email Address" />
                     </div>
-                    <LinkButton type="submit" class="submit-button" text="Subscribe" @click.prevent="signIn" />
+                    <LinkButton type="submit" class="submit-button" color="white" text="Subscribe" @click.prevent="signIn" />
 
                     <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
                     <div style="position: absolute; left: -5000px" aria-hidden="true">
@@ -320,7 +320,6 @@
                     }
 
                     .submit-button {
-                        background-color: white !important;
                         width: 350px;
 
                         :deep {
