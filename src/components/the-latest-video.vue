@@ -161,6 +161,23 @@
 
         @include tv {
             margin-top: 65px;
+
+            .content__preview {
+                height: 600px;
+            }
+
+            .content__title {
+                padding: 40px;
+                height: 600px;
+
+                .description {
+                    margin-bottom: 45px;
+                }
+
+                .watch-now__button {
+                    max-width: 350px;
+                }
+            }
         }
     }
 </style>
