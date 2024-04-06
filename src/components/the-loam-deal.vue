@@ -162,6 +162,10 @@
                         display: flex;
                         justify-content: center;
                     }
+
+                    @include mobile {
+                        margin-bottom: 25px;
+                    }
                 }
 
                 .form__content {
@@ -176,6 +180,7 @@
                         margin-bottom: 30px;
 
                         input {
+                            margin: 0;
                             width: 100%;
                             font-family: Inter;
                             font-size: 20px;
@@ -189,7 +194,6 @@
                                 padding-left: 20px;
                                 padding-bottom: 12px;
                                 padding-top: 13px;
-                                margin: 0;
                                 font-size: 16px;
                             }
                         }
