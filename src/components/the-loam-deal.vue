@@ -164,7 +164,7 @@
                 }
 
                 @include mobile {
-                    imd {
+                    img {
                         width: 62px;
                         height: 62px;
                     }
@@ -177,6 +177,10 @@
                 align-items: center;
                 justify-content: center;
                 padding: 100px;
+
+                @include mobile {
+                    padding: 20px;
+                }
 
                 :deep(.heading_3) {
                     h3 {
