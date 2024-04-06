@@ -1,15 +1,10 @@
 <script setup lang="ts">
     import { PUBLIC_DOMAIN } from '@/constants'
-    import { Heading2 } from '@theinsideline/common'
+    import { Heading2, Heading3, Paragraph } from '@theinsideline/common'
     import { ref } from 'vue'
 
     const previewUrl = ref(`${PUBLIC_DOMAIN}/images/preview.png`)
-    const displayBasic = ref(false)
-    const images = ref([
-        {
-            itemImageSrc: 'https://www.youtube.com/watch?v=ocp5ynefpDk',
-        },
-    ])
+
     const open = ref(false)
     const toggleModal = () => {
         open.value = !open.value
@@ -30,7 +25,59 @@
             <div class="content content__video" @click="toggleModal" :style="`background-image: url(${previewUrl})`">
                 <img :src="`${PUBLIC_DOMAIN}/icons/play_button.svg`" alt="play_button" />
             </div>
-            <div class="content content__form"></div>
+            <div class="content content__form">
+                <div class="text-loam-deal">
+                    <Heading3 text="The Loam Ranger x The Inside Line" />
+
+                    <Paragraph>A match made in heaven.<br />Subscribe to Our Emailer to get The Loam Deal!</Paragraph>
+
+                    <div id="mc_embed_shell">
+                        <div id="mc_embed_signup">
+                            <form
+                                id="mc-embedded-subscribe-form"
+                                class="validate"
+                                action="https://theinsideline.us19.list-manage.com/subscribe/post?u=e9725cd77be1f8c021f70bbbf&amp;id=f755cf2c83&amp;f_id=001ab4e4f0"
+                                method="post"
+                                name="mc-embedded-subscribe-form"
+                                novalidate=""
+                                target="_self"
+                            >
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group">
+                                        <!--<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>--><input
+                                            id="mce-EMAIL"
+                                            class="required email loam-email"
+                                            style="padding: 1rem"
+                                            name="EMAIL"
+                                            required=""
+                                            type="email"
+                                            value=""
+                                            placeholder="Your Email Address"
+                                        />
+                                    </div>
+                                    <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
+                                    <div id="mce-responses" class="clear">
+                                        <div id="mce-error-response" class="response" style="display: none"> </div>
+                                        <div id="mce-success-response" class="response" style="display: none"> </div>
+                                    </div>
+                                    <div style="position: absolute; left: -5000px" aria-hidden="true">
+                                        <input tabindex="-1" name="b_e9725cd77be1f8c021f70bbbf_f755cf2c83" type="text" value="" />
+                                    </div>
+                                    <div class="clear">
+                                        <input
+                                            id="mc-embedded-subscribe"
+                                            class="button button-loam"
+                                            name="subscribe"
+                                            type="submit"
+                                            value="Subscribe"
+                                        />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <dialog class="loam-deal__modal" :open @click="toggleModal">
             <iframe
