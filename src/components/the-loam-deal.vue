@@ -79,13 +79,14 @@
             z-index: 9999;
             width: 100vw;
             height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: none;
+
             background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.6);
 
             &[open='true'] {
                 display: flex;
+                align-items: center;
+                justify-content: center;
 
                 body {
                     overflow: hidden;
