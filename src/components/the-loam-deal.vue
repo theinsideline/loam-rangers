@@ -164,6 +164,11 @@
                         width: 90px;
                         height: 90px;
                     }
+
+                    @include tv {
+                        width: 90px;
+                        height: 90px;
+                    }
                 }
 
                 @include laptop {
@@ -172,6 +177,10 @@
 
                 @include desktop {
                     height: 500px;
+                }
+
+                @include tv {
+                    height: 600px;
                 }
             }
 
@@ -199,6 +208,10 @@
                 @include desktop {
                     padding: 60px;
                     height: 500px;
+                }
+
+                @include tv {
+                    height: 600px;
                 }
 
                 :deep(.heading_3) {
@@ -232,6 +245,10 @@
                     @include desktop {
                         margin-bottom: 45px;
                     }
+
+                    @include tv {
+                        margin-bottom: 45px;
+                    }
                 }
 
                 .form__content {
@@ -251,15 +268,15 @@
                             font-family: Inter;
                             font-size: 20px;
                             text-align: left;
+                            padding-left: 20px;
+                            padding-bottom: 12px;
+                            padding-top: 13px;
                         }
 
                         @include mobile {
                             margin-bottom: 20px;
 
                             input {
-                                padding-left: 20px;
-                                padding-bottom: 12px;
-                                padding-top: 13px;
                                 font-size: 16px;
                             }
                         }
@@ -268,9 +285,6 @@
                             margin-bottom: 20px;
 
                             input {
-                                padding-left: 20px;
-                                padding-bottom: 12px;
-                                padding-top: 13px;
                                 font-size: 16px;
                             }
                         }
@@ -280,9 +294,6 @@
                             max-width: 548px;
 
                             input {
-                                padding-left: 20px;
-                                padding-bottom: 12px;
-                                padding-top: 13px;
                                 font-size: 16px;
                             }
                         }
@@ -291,11 +302,12 @@
                             margin-bottom: 30px;
 
                             input {
-                                padding-left: 20px;
-                                padding-bottom: 12px;
-                                padding-top: 13px;
                                 font-size: 18px;
                             }
+                        }
+
+                        @include tv {
+                            margin-bottom: 30px;
                         }
                     }
 
@@ -323,6 +335,11 @@
                         @include desktop {
                             width: 100%;
                             max-width: 300px;
+                        }
+
+                        @include tv {
+                            width: 100%;
+                            max-width: 350px;
                         }
                     }
                 }
