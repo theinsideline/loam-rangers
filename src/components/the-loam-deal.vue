@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { PUBLIC_DOMAIN } from '@/constants'
-    import { Heading2, Heading3, Paragraph } from '@theinsideline/common'
+    import { Heading2, Heading3, Paragraph, LinkButton } from '@theinsideline/common'
     import { ref } from 'vue'
 
     const previewUrl = ref(`${PUBLIC_DOMAIN}/images/preview.png`)
@@ -14,6 +14,13 @@
         } else {
             document.body.style.overflow = ''
         }
+    }
+
+    const form = ref<HTMLFormElement>()
+    const signIn = (e: Event) => {
+        if (!form.value) return
+
+        form.value.submit()
     }
 </script>
 
@@ -32,55 +39,40 @@
                     <Paragraph>A match made in heaven.<br />Subscribe to Our Emailer to get The Loam Deal!</Paragraph>
 
                     <div id="mc_embed_shell">
-                        <div id="mc_embed_signup">
-                            <form
-                                id="mc-embedded-subscribe-form"
-                                class="validate"
-                                action="https://theinsideline.us19.list-manage.com/subscribe/post?u=e9725cd77be1f8c021f70bbbf&amp;id=f755cf2c83&amp;f_id=001ab4e4f0"
-                                method="post"
-                                name="mc-embedded-subscribe-form"
-                                novalidate=""
-                                target="_self"
-                            >
-                                <div id="mc_embed_signup_scroll">
-                                    <div class="mc-field-group">
-                                        <!--<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>-->
-                                        <input
-                                            id="mce-EMAIL"
-                                            class="required email loam-email"
-                                            style="padding: 1rem"
-                                            name="EMAIL"
-                                            required=""
-                                            type="email"
-                                            value=""
-                                            placeholder="Your Email Address"
-                                        />
-                                    </div>
-                                    <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
-                                    <div id="mce-responses" class="clear">
-                                        <div id="mce-error-response" class="response" style="display: none"> </div>
-                                        <div id="mce-success-response" class="response" style="display: none"> </div>
-                                    </div>
-                                    <div style="position: absolute; left: -5000px" aria-hidden="true">
-                                        <input tabindex="-1" name="b_e9725cd77be1f8c021f70bbbf_f755cf2c83" type="text" value="" />
-                                    </div>
-                                    <div class="clear">
-                                        <input
-                                            id="mc-embedded-subscribe"
-                                            class="button button-loam"
-                                            name="subscribe"
-                                            type="submit"
-                                            value="Subscribe"
-                                        />
-                                    </div>
+                        <form
+                            ref="form"
+                            id="mc-embedded-subscribe-form"
+                            class="validate"
+                            action="https://theinsideline.us19.list-manage.com/subscribe/post?u=e9725cd77be1f8c021f70bbbf&amp;id=f755cf2c83&amp;f_id=001ab4e4f0"
+                            method="post"
+                            name="mc-embedded-subscribe-form"
+                            target="_self"
+                        >
+                            <div id="mc_embed_signup_scroll" class="form__content">
+                                <div class="mc-field-group">
+                                    <input
+                                        id="mce-EMAIL"
+                                        class="required email loam-email"
+                                        style="padding: 1rem"
+                                        name="EMAIL"
+                                        type="email"
+                                        value=""
+                                        placeholder="Your Email Address"
+                                    />
                                 </div>
-                            </form>
-                        </div>
+                                <LinkButton type="submit" class="submit-button" text="Subscribe" @click.prevent="signIn" />
+
+                                <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
+                                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                                    <input tabindex="-1" name="b_e9725cd77be1f8c021f70bbbf_f755cf2c83" type="text" value="" />
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <dialog class="loam-deal__modal" :open @click="toggleModal">
+        <dialog v-if="open" class="loam-deal__modal" :open @click="toggleModal">
             <iframe
                 id="ytplayer"
                 type="text/html"
@@ -133,15 +125,11 @@
             z-index: 9999;
             width: 100vw;
             height: 100vh;
-            display: none;
             background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.6);
             border: none;
-
-            &[open] {
-                display: flex !important;
-                align-items: center;
-                justify-content: center;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         &__content {
@@ -172,6 +160,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding: 100px;
 
                 :deep(.heading_3) {
                     h3 {
@@ -180,8 +169,44 @@
                 }
 
                 :deep(.paragraph) {
+                    margin-bottom: 30px;
+
                     span {
                         color: white;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                .validate {
+                    width: 100%;
+
+                    .form__content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+
+                    .mc-field-group {
+                        width: 100%;
+                        margin-bottom: 30px;
+
+                        input {
+                            width: 100%;
+                            font-family: Inter;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .submit-button {
+                        background-color: white !important;
+                        width: 350px;
+
+                        :deep {
+                            color: #161616;
+                        }
                     }
                 }
             }
