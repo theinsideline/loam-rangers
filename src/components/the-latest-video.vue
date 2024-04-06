@@ -7,7 +7,7 @@
     <section class="latest-video">
         <Heading2 text="Latest Video" />
 
-        <div class="lates-video__content">
+        <div class="latest-video__content">
             <div class="content content__title" :style="`background: ${LATEST_VIDEO.BACKGROUND};`">
                 <Heading3 :text="LATEST_VIDEO.TITLE" />
                 <Paragraph :text="LATEST_VIDEO.DESCRIPTION" />
