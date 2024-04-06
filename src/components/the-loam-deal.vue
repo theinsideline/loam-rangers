@@ -82,7 +82,7 @@
             display: none;
             background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.6);
 
-            &[open='true'] {
+            &[open] {
                 display: flex !important;
                 align-items: center;
                 justify-content: center;
