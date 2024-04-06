@@ -141,20 +141,12 @@
         @include desktop {
             margin-top: 45px;
 
-            &__content {
-                flex-direction: column-reverse;
-            }
-
-            .content {
-                width: 100%;
-            }
-
             .content__preview {
                 height: 500px;
             }
 
             .content__title {
-                height: 350px;
+                height: 500px;
             }
         }
 
