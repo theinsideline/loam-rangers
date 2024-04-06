@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { LATEST_VIDEO } from '@/constants'
-    import { Heading3, LinkButton, Paragraph } from '@theinsideline/common'
+    import { Heading2, Heading3, LinkButton, Paragraph } from '@theinsideline/common'
 </script>
 
 <template>
