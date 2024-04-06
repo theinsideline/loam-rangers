@@ -148,6 +148,14 @@
             .content__title {
                 padding: 60px;
                 height: 500px;
+
+                .description {
+                    margin-bottom: 30px;
+                }
+
+                .watch-now__button {
+                    max-width: 300px;
+                }
             }
         }
 
