@@ -106,12 +106,20 @@
                 width: 100%;
                 height: 340px !important;
             }
+
+            @include laptop {
+                width: 100%;
+            }
         }
 
         &__content {
             display: flex;
 
             @include mobile {
+                flex-direction: column;
+            }
+
+            @include tablet {
                 flex-direction: column;
             }
 
@@ -146,6 +154,15 @@
                         width: 62px;
                         height: 62px;
                     }
+
+                    @include laptop {
+                        width: 82px;
+                        height: 82px;
+                    }
+                }
+
+                @include laptop {
+                    height: 500px;
                 }
             }
 
@@ -163,6 +180,11 @@
 
                 @include tablet {
                     padding: 20px;
+                }
+
+                @include laptop {
+                    padding: 90px;
+                    height: 350px;
                 }
 
                 :deep(.heading_3) {
