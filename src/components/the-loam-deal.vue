@@ -188,6 +188,16 @@
                             font-family: Inter;
                             font-size: 20px;
                         }
+
+                        @include mobile {
+                            margin-bottom: 20px;
+
+                            input {
+                                padding-left: 20px;
+                                padding-bottom: 12px;
+                                margin-top: 13px;
+                            }
+                        }
                     }
 
                     .submit-button {
