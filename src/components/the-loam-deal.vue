@@ -26,7 +26,7 @@
             </div>
             <div class="content content__form"></div>
         </div>
-        <dialog :open>
+        <dialog class="loam-deal__modal" :open @click="toggleModal">
             <iframe
                 id="ytplayer"
                 type="text/html"
@@ -68,6 +68,26 @@
 
         .content {
             width: 50%;
+        }
+
+        &__modal {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &[open] {
+                body {
+                    overflow: hidden;
+                }
+            }
         }
 
         &__content {
