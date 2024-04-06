@@ -44,7 +44,8 @@
                             >
                                 <div id="mc_embed_signup_scroll">
                                     <div class="mc-field-group">
-                                        <!--<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>--><input
+                                        <!--<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>-->
+                                        <input
                                             id="mce-EMAIL"
                                             class="required email loam-email"
                                             style="padding: 1rem"
@@ -168,6 +169,21 @@
 
             .content__form {
                 background-color: #161616;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                :deep(.heading_3) {
+                    h3 {
+                        color: white;
+                    }
+                }
+
+                :deep(.paragraph) {
+                    span {
+                        color: white;
+                    }
+                }
             }
         }
     }
