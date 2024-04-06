@@ -33,42 +33,40 @@
                 <img :src="`${PUBLIC_DOMAIN}/icons/play_button.svg`" alt="play_button" />
             </div>
             <div class="content content__form">
-                <div class="text-loam-deal">
-                    <Heading3 text="The Loam Ranger x The Inside Line" />
+                <Heading3 text="The Loam Ranger x The Inside Line" />
 
-                    <Paragraph>A match made in heaven.<br />Subscribe to Our Emailer to get The Loam Deal!</Paragraph>
+                <Paragraph>A match made in heaven.<br />Subscribe to Our Emailer to get The Loam Deal!</Paragraph>
 
-                    <div id="mc_embed_shell">
-                        <form
-                            ref="form"
-                            id="mc-embedded-subscribe-form"
-                            class="validate"
-                            action="https://theinsideline.us19.list-manage.com/subscribe/post?u=e9725cd77be1f8c021f70bbbf&amp;id=f755cf2c83&amp;f_id=001ab4e4f0"
-                            method="post"
-                            name="mc-embedded-subscribe-form"
-                            target="_self"
-                        >
-                            <div id="mc_embed_signup_scroll" class="form__content">
-                                <div class="mc-field-group">
-                                    <input
-                                        id="mce-EMAIL"
-                                        class="required email loam-email"
-                                        style="padding: 1rem"
-                                        name="EMAIL"
-                                        type="email"
-                                        value=""
-                                        placeholder="Your Email Address"
-                                    />
-                                </div>
-                                <LinkButton type="submit" class="submit-button" text="Subscribe" @click.prevent="signIn" />
-
-                                <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
-                                <div style="position: absolute; left: -5000px" aria-hidden="true">
-                                    <input tabindex="-1" name="b_e9725cd77be1f8c021f70bbbf_f755cf2c83" type="text" value="" />
-                                </div>
+                <div id="mc_embed_shell">
+                    <form
+                        ref="form"
+                        id="mc-embedded-subscribe-form"
+                        class="validate"
+                        action="https://theinsideline.us19.list-manage.com/subscribe/post?u=e9725cd77be1f8c021f70bbbf&amp;id=f755cf2c83&amp;f_id=001ab4e4f0"
+                        method="post"
+                        name="mc-embedded-subscribe-form"
+                        target="_self"
+                    >
+                        <div id="mc_embed_signup_scroll" class="form__content">
+                            <div class="mc-field-group">
+                                <input
+                                    id="mce-EMAIL"
+                                    class="required email loam-email"
+                                    style="padding: 1rem"
+                                    name="EMAIL"
+                                    type="email"
+                                    value=""
+                                    placeholder="Your Email Address"
+                                />
                             </div>
-                        </form>
-                    </div>
+                            <LinkButton type="submit" class="submit-button" text="Subscribe" @click.prevent="signIn" />
+
+                            <div hidden=""><input name="tags" type="hidden" value="6738225" /></div>
+                            <div style="position: absolute; left: -5000px" aria-hidden="true">
+                                <input tabindex="-1" name="b_e9725cd77be1f8c021f70bbbf_f755cf2c83" type="text" value="" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -161,10 +159,8 @@
                         transform: scale(1.1, 1.1);
                         transition: transform 0.3s linear;
                     }
-                }
 
-                @include mobile {
-                    img {
+                    @include mobile {
                         width: 62px;
                         height: 62px;
                     }
