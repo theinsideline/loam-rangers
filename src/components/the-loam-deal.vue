@@ -159,10 +159,19 @@
                         width: 82px;
                         height: 82px;
                     }
+
+                    @include laptop {
+                        width: 90px;
+                        height: 90px;
+                    }
                 }
 
                 @include laptop {
                     height: 500px;
+                }
+
+                @include desktop {
+                    height: 600px;
                 }
             }
 
@@ -185,6 +194,11 @@
                 @include laptop {
                     padding: 90px;
                     height: 350px;
+                }
+
+                @include laptop {
+                    padding: 90px;
+                    height: 600px;
                 }
 
                 :deep(.heading_3) {
@@ -213,6 +227,10 @@
 
                     @include laptop {
                         margin-bottom: 30px;
+                    }
+
+                    @include desktop {
+                        margin-bottom: 45px;
                     }
                 }
 
@@ -268,6 +286,17 @@
                                 font-size: 16px;
                             }
                         }
+
+                        @include desktop {
+                            margin-bottom: 30px;
+
+                            input {
+                                padding-left: 20px;
+                                padding-bottom: 12px;
+                                padding-top: 13px;
+                                font-size: 18px;
+                            }
+                        }
                     }
 
                     .submit-button {
@@ -287,6 +316,11 @@
                         }
 
                         @include laptop {
+                            width: 100%;
+                            max-width: 300px;
+                        }
+
+                        @include desktop {
                             width: 100%;
                             max-width: 300px;
                         }
