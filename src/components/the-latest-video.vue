@@ -10,7 +10,7 @@
         <div class="latest-video__content">
             <div class="content content__title" :style="`background: ${LATEST_VIDEO.BACKGROUND};`">
                 <Heading3 :text="LATEST_VIDEO.TITLE" />
-                <Paragraph :text="LATEST_VIDEO.DESCRIPTION" />
+                <Paragraph class="description" :text="LATEST_VIDEO.DESCRIPTION" />
                 <LinkButton class="watch-now__button" color="white" :link="LATEST_VIDEO.VIDEO_LINK" text="Watch now" />
             </div>
             <div class="content content__preview" :style="`background-image: url(${LATEST_VIDEO.IMAGE_LINK});`"></div>
@@ -81,6 +81,10 @@
 
             .content__title {
                 padding: 20px;
+
+                .description {
+                    margin-bottom: 25px;
+                }
             }
         }
 
@@ -94,6 +98,14 @@
             .content {
                 width: 100%;
                 height: 340px;
+            }
+
+            .content__title {
+                padding: 20px;
+
+                .description {
+                    margin-bottom: 25px;
+                }
             }
         }
 
@@ -114,6 +126,14 @@
 
             .content__title {
                 height: 350px;
+
+                .description {
+                    margin-bottom: 30px;
+                }
+
+                .watch-now__button {
+                    max-width: 300px;
+                }
             }
         }
 
