@@ -133,7 +133,7 @@
 
             @include mobile {
                 width: 100%;
-                height: 340px;
+                height: 340px !important;
             }
         }
 
@@ -160,6 +160,13 @@
                     &:hover {
                         transform: scale(1.1, 1.1);
                         transition: transform 0.3s linear;
+                    }
+                }
+
+                @include mobile {
+                    imd {
+                        width: 62px;
+                        height: 62px;
                     }
                 }
             }
