@@ -11,7 +11,7 @@
             <div class="content content__title" :style="`background: ${LATEST_VIDEO.BACKGROUND};`">
                 <Heading3 :text="LATEST_VIDEO.TITLE" />
                 <Paragraph :text="LATEST_VIDEO.DESCRIPTION" />
-                <LinkButton color="white" :link="LATEST_VIDEO.VIDEO_LINK" text="Watch now" />
+                <LinkButton class="watch-now__button" color="white" :link="LATEST_VIDEO.VIDEO_LINK" text="Watch now" />
             </div>
             <div class="content content__preview" :style="`background-image: url(${LATEST_VIDEO.IMAGE_LINK});`"></div>
         </div>
@@ -28,6 +28,20 @@
             width: 50%;
         }
 
+        .watch-now__button {
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: #747474 !important;
+                color: white !important;
+                transition: all 0.3s ease-in-out;
+            }
+
+            :deep {
+                color: #161616;
+            }
+        }
+
         .content__title {
             display: flex;
             flex-direction: column;
@@ -42,6 +56,7 @@
 
             :deep(.paragraph) {
                 color: white;
+                text-align: center;
             }
         }
 
