@@ -29,6 +29,11 @@
         }
 
         .content__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
             :deep(.heading_3) {
                 h3 {
                     color: white;
@@ -57,6 +62,10 @@
             .content {
                 width: 100%;
                 height: 340px;
+            }
+
+            .content__title {
+                padding: 20px;
             }
         }
 
