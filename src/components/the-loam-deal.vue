@@ -50,7 +50,6 @@
                         <input
                             id="mce-EMAIL"
                             class="required email loam-email"
-                            style="padding: 1rem"
                             name="EMAIL"
                             type="email"
                             value=""
@@ -193,9 +192,10 @@
                             margin-bottom: 20px;
 
                             input {
-                                padding-left: 20px;
-                                padding-bottom: 12px;
-                                margin-top: 13px;
+                                padding-left: 20px !important;
+                                padding-bottom: 12px !important;
+                                padding-top: 13px !important;
+                                margin: 0 !important;
                             }
                         }
                     }
