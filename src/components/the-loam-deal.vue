@@ -76,39 +76,43 @@
     .loam-deal {
         @include mobile {
             margin-top: 35px;
+
+            .content {
+                width: 100%;
+                height: 340px !important;
+            }
         }
 
         @include tablet {
             margin-top: 45px;
+
+            .content {
+                width: 100%;
+                height: 340px !important;
+            }
         }
 
         @include laptop {
             margin-top: 45px;
+
+            .content {
+                width: 100%;
+            }
         }
 
         @include desktop {
             margin-top: 45px;
+
+            .content {
+                width: 50%;
+            }
         }
 
         @include tv {
             margin-top: 65px;
-        }
 
-        .content {
-            width: 50%;
-
-            @include mobile {
-                width: 100%;
-                height: 340px !important;
-            }
-
-            @include tablet {
-                width: 100%;
-                height: 340px !important;
-            }
-
-            @include laptop {
-                width: 100%;
+            .content {
+                width: 50%;
             }
         }
 
@@ -144,43 +148,47 @@
                         transform: scale(1.1, 1.1);
                         transition: transform 0.3s linear;
                     }
+                }
 
-                    @include mobile {
+                @include mobile {
+                    img {
                         width: 62px;
                         height: 62px;
                     }
+                }
 
-                    @include tablet {
+                @include tablet {
+                    img {
                         width: 62px;
                         height: 62px;
-                    }
-
-                    @include laptop {
-                        width: 82px;
-                        height: 82px;
-                    }
-
-                    @include desktop {
-                        width: 90px;
-                        height: 90px;
-                    }
-
-                    @include tv {
-                        width: 90px;
-                        height: 90px;
                     }
                 }
 
                 @include laptop {
                     height: 500px;
+
+                    img {
+                        width: 82px;
+                        height: 82px;
+                    }
                 }
 
                 @include desktop {
                     height: 500px;
+
+                    img {
+                        width: 90px;
+                        height: 90px;
+                    }
                 }
 
                 @include tv {
                     height: 600px;
+
+                    img {
+                        width: 90px;
+                        height: 90px;
+                    }
                 }
             }
 
@@ -190,7 +198,6 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                padding: 100px;
 
                 @include mobile {
                     padding: 20px;
@@ -211,6 +218,7 @@
                 }
 
                 @include tv {
+                    padding: 100px;
                     height: 600px;
                 }
 
