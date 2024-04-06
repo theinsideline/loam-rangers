@@ -2,8 +2,6 @@
     import { PUBLIC_DOMAIN } from '@/constants'
     import { Heading2 } from '@theinsideline/common'
     import { ref } from 'vue'
-    import Galleria from 'primevue/galleria'
-    import 'primevue/resources/themes/aura-light-green/theme.css'
 
     const previewUrl = ref(`${PUBLIC_DOMAIN}/images/preview.png`)
     const displayBasic = ref(false)
@@ -12,6 +10,10 @@
             itemImageSrc: 'https://www.youtube.com/watch?v=ocp5ynefpDk',
         },
     ])
+    const open = ref(false)
+    const toggleModal = () => {
+        open.value = !open.value
+    }
 </script>
 
 <template>
@@ -19,18 +21,22 @@
         <Heading2 text="The Loam Deal" />
 
         <div class="loam-deal__content">
-            <a
-                class="content content__video"
-                :style="`background-image: url(${previewUrl});`"
-                role="button"
-                href="#0"
-                aria-controls="modalFeatureVideo11"
-                data-url="https://www.youtube.com/watch?v=ocp5ynefpDk"
-            >
+            <div class="content content__video" @click="toggleModal" :style="`background-image: url(${previewUrl})`">
                 <img :src="`${PUBLIC_DOMAIN}/icons/play_button.svg`" alt="play_button" />
-            </a>
+            </div>
             <div class="content content__form"></div>
         </div>
+        <dialog :open>
+            <iframe
+                id="ytplayer"
+                type="text/html"
+                width="1024"
+                height="576"
+                src="https://www.youtube.com/embed/ocp5ynefpDk"
+                frameborder="0"
+                allowfullscreen
+            />
+        </dialog>
     </section>
 </template>
 
