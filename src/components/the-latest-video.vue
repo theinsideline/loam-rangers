@@ -146,6 +146,7 @@
             }
 
             .content__title {
+                padding: 60px;
                 height: 500px;
             }
         }
