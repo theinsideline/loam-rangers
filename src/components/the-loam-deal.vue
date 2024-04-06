@@ -160,7 +160,7 @@
                         height: 82px;
                     }
 
-                    @include laptop {
+                    @include desktop {
                         width: 90px;
                         height: 90px;
                     }
@@ -196,7 +196,7 @@
                     height: 350px;
                 }
 
-                @include laptop {
+                @include desktop {
                     padding: 90px;
                     height: 600px;
                 }
