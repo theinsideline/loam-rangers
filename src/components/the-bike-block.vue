@@ -251,6 +251,7 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                max-height: none;
 
                 li {
                     width: 100%;
