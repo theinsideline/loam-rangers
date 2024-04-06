@@ -13,6 +13,12 @@
     const open = ref(false)
     const toggleModal = () => {
         open.value = !open.value
+
+        if (open.value) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = ''
+        }
     }
 </script>
 

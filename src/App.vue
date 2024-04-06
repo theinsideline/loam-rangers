@@ -45,12 +45,6 @@
 </script>
 
 <style lang="scss">
-    @if dialog: has(open) {
-        body {
-            overflow: hidden !important;
-        }
-    }
-
     .padding-top-null {
         padding-top: 0 !important;
     }
