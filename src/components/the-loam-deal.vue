@@ -84,7 +84,9 @@
             justify-content: center;
             background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.6);
 
-            &[open] {
+            &[open='true'] {
+                display: flex;
+
                 body {
                     overflow: hidden;
                 }
