@@ -81,6 +81,7 @@
             height: 100vh;
             display: none;
             background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.6);
+            border: none;
 
             &[open] {
                 display: flex !important;
