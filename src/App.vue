@@ -45,7 +45,7 @@
 </script>
 
 <style lang="scss">
-    @if dialog[open] {
+    @if dialog: has(open) {
         body {
             overflow: hidden !important;
         }
