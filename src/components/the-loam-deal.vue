@@ -112,14 +112,6 @@
             margin-top: 65px;
         }
 
-        .content {
-            width: 50%;
-
-            @include mobile {
-                width: 100%;
-            }
-        }
-
         &__modal {
             position: fixed;
             top: 0;
@@ -134,6 +126,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .content {
+            width: 50%;
+
+            @include mobile {
+                width: 100%;
+                height: 340px;
+            }
         }
 
         &__content {
