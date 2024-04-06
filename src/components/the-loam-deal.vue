@@ -321,6 +321,13 @@
 
                     .submit-button {
                         width: 350px;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background: #747474 !important;
+                            color: white !important;
+                            transition: all 0.3s ease-in-out;
+                        }
 
                         :deep {
                             color: #161616;
