@@ -263,12 +263,12 @@
             width: 100%;
             display: flex;
             background-color: white;
-            padding-bottom: 20px;
+            padding-bottom: 16px;
 
             a {
                 color: #161616;
-                padding-top: 14px;
-                padding-bottom: 15px;
+                padding-top: 13px;
+                padding-bottom: 13px;
                 text-align: center;
                 width: 100%;
                 background-color: #e7e7e7;
