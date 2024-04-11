@@ -4,6 +4,7 @@
     import { ref } from 'vue'
 
     const previewUrl = ref(`${PUBLIC_DOMAIN}/images/preview.png`)
+    const closeIconUrl = ref(`${PUBLIC_DOMAIN}/icons/close.svg`)
 
     const open = ref(false)
     const toggleModal = () => {
@@ -59,6 +60,7 @@
             </div>
         </div>
         <dialog v-if="open" class="loam-deal__modal" :open @click="toggleModal">
+            <img class="close-icon" :src="closeIconUrl" />
             <iframe
                 id="ytplayer"
                 type="text/html"
@@ -374,6 +376,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .close-icon {
+                position: fixed;
+                right: 0;
+                top: 0;
+                margin: 20px;
+                padding: 10px;
+                border-radius: 50%;
+                border: 3px solid white;
+                transition: all 0.3s ease-in;
+
+                &:hover {
+                    transition: all 0.3s ease-in;
+                    transform: scale(1.1, 1.1);
+                }
+            }
         }
     }
 </style>
