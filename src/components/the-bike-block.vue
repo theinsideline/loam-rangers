@@ -228,13 +228,13 @@
 
             @include desktop {
                 display: flex;
-                flex-direction: row;
+                flex-direction: row-reverse;
                 align-items: center;
             }
 
             @include tv {
                 display: flex;
-                flex-direction: row;
+                flex-direction: row-reverse;
                 align-items: center;
             }
         }
