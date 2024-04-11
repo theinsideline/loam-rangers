@@ -213,28 +213,28 @@
 
             @include mobile {
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
             }
 
             @include tablet {
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
             }
 
             @include laptop {
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
             }
 
             @include desktop {
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: row;
                 align-items: center;
             }
 
             @include tv {
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: row;
                 align-items: center;
             }
         }
