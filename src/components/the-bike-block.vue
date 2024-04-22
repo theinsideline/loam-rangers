@@ -105,17 +105,17 @@
     <section class="bike-block">
         <Galleria
             v-model:activeIndex="activeIndex"
+            showIndicators
+            containerClass="gallery"
             :value="images"
             :responsiveOptions
-            :showThumbnails="false"
-            showIndicators
-            :showIndicatorsOnItem="false"
             :indicatorsPosition
-            containerClass="gallery"
+            :showThumbnails="false"
             :transitionInterval="5000"
+            :showIndicatorsOnItem="false"
         >
             <template #item="slotProps">
-                <p>{{ slotProps.item.itemImageSrc }}</p>
+                <p>{{ slotProps.item.itemImageSrc }}: {{ activeIndex }}</p>
                 <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block; max-height: 549px" />
             </template>
             <template #indicator="{ index }">
