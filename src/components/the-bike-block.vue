@@ -114,9 +114,14 @@
             :transitionInterval="5000"
             :showIndicatorsOnItem="false"
         >
-            <template #item="slotProps">
-                <p>{{ slotProps.item.itemImageSrc }}: {{ activeIndex }}</p>
-                <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block; max-height: 549px" />
+            <template #item="{ item }">
+                <img
+                    v-if="item.itemImageSrc"
+                    :src="item.itemImageSrc"
+                    :alt="item.alt"
+                    style="width: 100%; display: block; max-height: 549px"
+                    fetchpriority="high"
+                />
             </template>
             <template #indicator="{ index }">
                 <div
