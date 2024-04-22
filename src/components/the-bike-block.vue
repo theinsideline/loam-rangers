@@ -120,7 +120,6 @@
                     :src="item.itemImageSrc"
                     :alt="item.alt"
                     style="width: 100%; display: block; max-height: 549px"
-                    fetchpriority="high"
                 />
             </template>
             <template #indicator="{ index }">
