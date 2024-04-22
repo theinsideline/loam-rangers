@@ -115,6 +115,7 @@
             :transitionInterval="5000"
         >
             <template #item="slotProps">
+                <p>{{ slotProps.item.itemImageSrc }}</p>
                 <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block; max-height: 549px" />
             </template>
             <template #indicator="{ index }">
