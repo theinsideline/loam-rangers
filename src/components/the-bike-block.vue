@@ -19,7 +19,7 @@
         },
         {
             itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-ibis.svg`,
-            alt: 'loam-bike',
+            alt: 'loam-ibis',
             title: 'Ibis',
             button: {
                 title: 'Ibis',
@@ -28,7 +28,7 @@
         },
         {
             itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-manitou.svg`,
-            alt: 'loam-bike',
+            alt: 'loam-manitou',
             title: 'Manitou',
             button: {
                 title: 'Manitou',
@@ -37,7 +37,7 @@
         },
         {
             itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-hayes-trp.svg`,
-            alt: 'loam-bike',
+            alt: 'loam-hayes-trp',
             title: 'Hayes / TPR',
             button: {
                 title: 'Hayes / TPR',
@@ -46,7 +46,7 @@
         },
         {
             itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-sdg.svg`,
-            alt: 'loam-bike',
+            alt: 'loam-sdg',
             title: 'SDG',
             button: {
                 title: 'SDG',
@@ -55,7 +55,7 @@
         },
         {
             itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-michelin.svg`,
-            alt: 'loam-bike',
+            alt: 'loam-michelin',
             title: 'Michelin',
             button: {
                 title: 'Michelin',
@@ -64,7 +64,7 @@
         },
         {
             itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-ride-nf.svg`,
-            alt: 'loam-bike',
+            alt: 'loam-ride-nf',
             title: 'Ride NF',
             button: {
                 title: 'Ride NF',
