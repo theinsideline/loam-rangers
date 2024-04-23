@@ -1,8 +1,7 @@
 <script setup lang="ts">
-    import { ref, onMounted } from 'vue'
+    import { ref, onMounted, computed } from 'vue'
     import Galleria from 'primevue/galleria'
     import { useWindowSize } from '@vueuse/core'
-    import { computed } from 'vue'
     import LoamBikeIcon from '@/assets/icons/loam-bike.vue'
     import LoamHayesTrpIcon from '@/assets/icons/loam-hayes-trp.vue'
     import LoamIbisIcon from '@/assets/icons/loam-ibis.vue'
@@ -148,7 +147,7 @@
                 width: 100%;
                 display: block;
                 max-height: 549px;
-                height: auto
+                height: auto;
             }
         }
 
