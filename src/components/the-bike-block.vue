@@ -97,7 +97,7 @@
 
     const activeIndex = ref(0)
     const changeIndex = (item: number) => {
-        if (indicatorsPosition.value === 'top') {
+        if (indicatorsPosition.value !== 'top') {
             activeIndex.value = item
         }
     }
