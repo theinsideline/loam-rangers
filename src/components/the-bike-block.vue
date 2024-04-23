@@ -148,6 +148,7 @@
                 width: 100%;
                 display: block;
                 max-height: 549px;
+                height: auto
             }
         }
 
