@@ -121,7 +121,7 @@
                 <LoamManitouIcon v-if="slotProps.item.index === 2" class="icon" />
                 <LoamHayesTrpIcon v-if="slotProps.item.index === 3" class="icon" />
                 <LoamSdgIcon v-if="slotProps.item.index === 4" class="icon" />
-                <LoamMichelinIcon  v-if="slotProps.item.index === 5" class="icon" />
+                <LoamMichelinIcon v-if="slotProps.item.index === 5" class="icon" />
                 <LoamRideNFIcon v-if="slotProps.item.index === 6" class="icon" />
             </template>
             <template #indicator="{ index }">

@@ -1,8 +1,6 @@
 <template>
     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1660 940">
-        <defs>
-           
-        </defs>
+        <defs></defs>
         <g id="Brkaes_Left_Crank_Arm" data-name="Brkaes Left Crank Arm">
             <path
                 class="cls-50"
@@ -3603,277 +3601,277 @@
 </template>
 
 <style scoped>
-.cls-1,
-.cls-2,
-.cls-3,
-.cls-4,
-.cls-5,
-.cls-6,
-.cls-7,
-.cls-8,
-.cls-9,
-.cls-10,
-.cls-11,
-.cls-12,
-.cls-13,
-.cls-14,
-.cls-15 {
-    stroke-miterlimit: 10;
-}
+    .cls-1,
+    .cls-2,
+    .cls-3,
+    .cls-4,
+    .cls-5,
+    .cls-6,
+    .cls-7,
+    .cls-8,
+    .cls-9,
+    .cls-10,
+    .cls-11,
+    .cls-12,
+    .cls-13,
+    .cls-14,
+    .cls-15 {
+        stroke-miterlimit: 10;
+    }
 
-.cls-1,
-.cls-2,
-.cls-16,
-.cls-17,
-.cls-18,
-.cls-19 {
-    stroke-width: 2px;
-}
+    .cls-1,
+    .cls-2,
+    .cls-16,
+    .cls-17,
+    .cls-18,
+    .cls-19 {
+        stroke-width: 2px;
+    }
 
-.cls-1,
-.cls-20,
-.cls-21,
-.cls-4,
-.cls-22,
-.cls-23,
-.cls-6,
-.cls-24,
-.cls-25,
-.cls-26,
-.cls-17,
-.cls-8,
-.cls-11,
-.cls-27,
-.cls-19,
-.cls-28,
-.cls-13,
-.cls-29,
-.cls-30,
-.cls-14,
-.cls-31,
-.cls-32,
-.cls-15 {
-    stroke: #070808;
-}
+    .cls-1,
+    .cls-20,
+    .cls-21,
+    .cls-4,
+    .cls-22,
+    .cls-23,
+    .cls-6,
+    .cls-24,
+    .cls-25,
+    .cls-26,
+    .cls-17,
+    .cls-8,
+    .cls-11,
+    .cls-27,
+    .cls-19,
+    .cls-28,
+    .cls-13,
+    .cls-29,
+    .cls-30,
+    .cls-14,
+    .cls-31,
+    .cls-32,
+    .cls-15 {
+        stroke: #070808;
+    }
 
-.cls-1,
-.cls-21,
-.cls-8,
-.cls-27,
-.cls-19,
-.cls-33,
-.cls-31,
-.cls-15 {
-    fill: #fff;
-}
+    .cls-1,
+    .cls-21,
+    .cls-8,
+    .cls-27,
+    .cls-19,
+    .cls-33,
+    .cls-31,
+    .cls-15 {
+        fill: #fff;
+    }
 
-.cls-34,
-.cls-35,
-.cls-2,
-.cls-20,
-.cls-36,
-.cls-37,
-.cls-3,
-.cls-22,
-.cls-23,
-.cls-5,
-.cls-38,
-.cls-24,
-.cls-39,
-.cls-40,
-.cls-7,
-.cls-16,
-.cls-17,
-.cls-9,
-.cls-11,
-.cls-41,
-.cls-28,
-.cls-13,
-.cls-42 {
-    fill: none;
-}
+    .cls-34,
+    .cls-35,
+    .cls-2,
+    .cls-20,
+    .cls-36,
+    .cls-37,
+    .cls-3,
+    .cls-22,
+    .cls-23,
+    .cls-5,
+    .cls-38,
+    .cls-24,
+    .cls-39,
+    .cls-40,
+    .cls-7,
+    .cls-16,
+    .cls-17,
+    .cls-9,
+    .cls-11,
+    .cls-41,
+    .cls-28,
+    .cls-13,
+    .cls-42 {
+        fill: none;
+    }
 
-.cls-34,
-.cls-35,
-.cls-2,
-.cls-37,
-.cls-3,
-.cls-43,
-.cls-44,
-.cls-5,
-.cls-38,
-.cls-45,
-.cls-39,
-.cls-40,
-.cls-7,
-.cls-16,
-.cls-46,
-.cls-9,
-.cls-10,
-.cls-47,
-.cls-48,
-.cls-18,
-.cls-49,
-.cls-41,
-.cls-12,
-.cls-42 {
-    stroke: #fff;
-}
+    .cls-34,
+    .cls-35,
+    .cls-2,
+    .cls-37,
+    .cls-3,
+    .cls-43,
+    .cls-44,
+    .cls-5,
+    .cls-38,
+    .cls-45,
+    .cls-39,
+    .cls-40,
+    .cls-7,
+    .cls-16,
+    .cls-46,
+    .cls-9,
+    .cls-10,
+    .cls-47,
+    .cls-48,
+    .cls-18,
+    .cls-49,
+    .cls-41,
+    .cls-12,
+    .cls-42 {
+        stroke: #fff;
+    }
 
-.cls-34,
-.cls-35,
-.cls-20,
-.cls-21,
-.cls-37,
-.cls-22,
-.cls-23,
-.cls-44,
-.cls-38,
-.cls-24,
-.cls-45,
-.cls-39,
-.cls-40,
-.cls-25,
-.cls-26,
-.cls-16,
-.cls-46,
-.cls-17,
-.cls-48,
-.cls-18,
-.cls-49,
-.cls-27,
-.cls-19,
-.cls-41,
-.cls-28,
-.cls-31,
-.cls-32,
-.cls-42 {
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
+    .cls-34,
+    .cls-35,
+    .cls-20,
+    .cls-21,
+    .cls-37,
+    .cls-22,
+    .cls-23,
+    .cls-44,
+    .cls-38,
+    .cls-24,
+    .cls-45,
+    .cls-39,
+    .cls-40,
+    .cls-25,
+    .cls-26,
+    .cls-16,
+    .cls-46,
+    .cls-17,
+    .cls-48,
+    .cls-18,
+    .cls-49,
+    .cls-27,
+    .cls-19,
+    .cls-41,
+    .cls-28,
+    .cls-31,
+    .cls-32,
+    .cls-42 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
 
-.cls-34,
-.cls-7 {
-    stroke-width: 6px;
-}
+    .cls-34,
+    .cls-7 {
+        stroke-width: 6px;
+    }
 
-.cls-35 {
-    stroke-width: 6px;
-}
+    .cls-35 {
+        stroke-width: 6px;
+    }
 
-.cls-36,
-.cls-50,
-.cls-33 {
-    stroke-width: 0px;
-}
+    .cls-36,
+    .cls-50,
+    .cls-33 {
+        stroke-width: 0px;
+    }
 
-.cls-37 {
-    stroke-width: 4.5px;
-}
+    .cls-37 {
+        stroke-width: 4.5px;
+    }
 
-.cls-3,
-.cls-38,
-.cls-11,
-.cls-28,
-.cls-14,
-.cls-31 {
-    stroke-width: 0.5px;
-}
+    .cls-3,
+    .cls-38,
+    .cls-11,
+    .cls-28,
+    .cls-14,
+    .cls-31 {
+        stroke-width: 0.5px;
+    }
 
-.cls-4,
-.cls-43,
-.cls-44,
-.cls-6,
-.cls-45,
-.cls-25,
-.cls-26,
-.cls-50,
-.cls-46,
-.cls-10,
-.cls-47,
-.cls-48,
-.cls-18,
-.cls-49,
-.cls-12,
-.cls-29,
-.cls-30,
-.cls-14,
-.cls-32 {
-    fill: #070808;
-}
+    .cls-4,
+    .cls-43,
+    .cls-44,
+    .cls-6,
+    .cls-45,
+    .cls-25,
+    .cls-26,
+    .cls-50,
+    .cls-46,
+    .cls-10,
+    .cls-47,
+    .cls-48,
+    .cls-18,
+    .cls-49,
+    .cls-12,
+    .cls-29,
+    .cls-30,
+    .cls-14,
+    .cls-32 {
+        fill: #070808;
+    }
 
-.cls-22,
-.cls-44,
-.cls-15 {
-    stroke-width: 1.5px;
-}
+    .cls-22,
+    .cls-44,
+    .cls-15 {
+        stroke-width: 1.5px;
+    }
 
-.cls-43 {
-    stroke-miterlimit: 10;
-    stroke-width: 1px;
-}
+    .cls-43 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+    }
 
-.cls-23,
-.cls-6,
-.cls-8,
-.cls-9,
-.cls-10,
-.cls-42 {
-    stroke-width: 0.75px;
-}
+    .cls-23,
+    .cls-6,
+    .cls-8,
+    .cls-9,
+    .cls-10,
+    .cls-42 {
+        stroke-width: 0.75px;
+    }
 
-.cls-24 {
-    stroke-width: 2.5px;
-}
+    .cls-24 {
+        stroke-width: 2.5px;
+    }
 
-.cls-40 {
-    stroke-width: 4px;
-}
+    .cls-40 {
+        stroke-width: 4px;
+    }
 
-.cls-25 {
-    stroke-width: 1px;
-}
+    .cls-25 {
+        stroke-width: 1px;
+    }
 
-.cls-26 {
-    stroke-width: 1px;
-}
+    .cls-26 {
+        stroke-width: 1px;
+    }
 
-.cls-46 {
-    stroke-width: 1px;
-}
+    .cls-46 {
+        stroke-width: 1px;
+    }
 
-.cls-47 {
-    stroke-miterlimit: 10;
-    stroke-width: 0.75px;
-}
+    .cls-47 {
+        stroke-miterlimit: 10;
+        stroke-width: 0.75px;
+    }
 
-.cls-48 {
-    stroke-width: 2px;
-}
+    .cls-48 {
+        stroke-width: 2px;
+    }
 
-.cls-49 {
-    stroke-width: 2px;
-}
+    .cls-49 {
+        stroke-width: 2px;
+    }
 
-.cls-27 {
-    stroke-width: 2px;
-}
+    .cls-27 {
+        stroke-width: 2px;
+    }
 
-.cls-41 {
-    stroke-width: 5px;
-}
+    .cls-41 {
+        stroke-width: 5px;
+    }
 
-.cls-13 {
-    stroke-width: 3px;
-}
+    .cls-13 {
+        stroke-width: 3px;
+    }
 
-.cls-29 {
-    stroke-miterlimit: 10;
-    stroke-width: 1px;
-}
+    .cls-29 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+    }
 
-.cls-30 {
-    stroke-miterlimit: 10;
-    stroke-width: 1px;
-}
+    .cls-30 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+    }
 </style>
