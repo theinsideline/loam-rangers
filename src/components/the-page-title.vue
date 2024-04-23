@@ -12,7 +12,7 @@
 <style scoped lang="scss">
     .page-title {
         :deep(.heading) {
-            text-align: left;
+            text-align: center;
         }
 
         @include mobile {

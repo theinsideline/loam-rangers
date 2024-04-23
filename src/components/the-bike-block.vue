@@ -9,7 +9,7 @@
 
     const images = ref([
         {
-            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-bike.svg`,
+            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978273/hd6-loam-ranger.svg`,
             alt: 'loam-bike',
             title: 'Bike',
             button: {
@@ -18,7 +18,7 @@
             },
         },
         {
-            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-ibis.svg`,
+            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg`,
             alt: 'loam-ibis',
             title: 'Ibis',
             button: {
@@ -27,7 +27,7 @@
             },
         },
         {
-            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-manitou.svg`,
+            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg`,
             alt: 'loam-manitou',
             title: 'Manitou',
             button: {
@@ -36,7 +36,7 @@
             },
         },
         {
-            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-hayes-trp.svg`,
+            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg`,
             alt: 'loam-hayes-trp',
             title: 'Hayes / TPR',
             button: {
@@ -45,7 +45,7 @@
             },
         },
         {
-            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-sdg.svg`,
+            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg`,
             alt: 'loam-sdg',
             title: 'SDG',
             button: {
@@ -54,7 +54,7 @@
             },
         },
         {
-            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-michelin.svg`,
+            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg`,
             alt: 'loam-michelin',
             title: 'Michelin',
             button: {
@@ -63,7 +63,7 @@
             },
         },
         {
-            itemImageSrc: `${PUBLIC_DOMAIN}/icons/loam-ride-nf.svg`,
+            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg`,
             alt: 'loam-ride-nf',
             title: 'Ride NF',
             button: {
