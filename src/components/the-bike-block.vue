@@ -117,6 +117,7 @@
             :showIndicatorsOnItem="false"
         >
             <template #item="slotProps">
+                <p>{{ slotProps.item.index }}</p>
                 <img
                     :src="images[slotProps.item.index].itemImageSrc"
                     :alt="slotProps.item.alt"
