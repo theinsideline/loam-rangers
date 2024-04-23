@@ -90,7 +90,9 @@
 
     const activeIndex = ref(0)
     const changeIndex = (item: number) => {
-        activeIndex.value = item
+        if (indicatorsPosition.value === 'top') {
+            activeIndex.value = item
+        }
     }
 
     onMounted(() => {
@@ -117,7 +119,7 @@
             <template #item="{ item }">
                 <img
                     v-if="item.itemImageSrc"
-                    v-attr="`src: ${item.itemImageSrc}`"
+                    :src="item.itemImageSrc"
                     :alt="item.alt"
                     style="width: 100%; display: block; max-height: 549px"
                 />
