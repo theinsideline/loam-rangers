@@ -9,6 +9,7 @@
 
     const images = ref([
         {
+            index: 0,
             itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978273/hd6-loam-ranger.svg`,
             alt: 'loam-bike',
             title: 'Bike',
@@ -18,6 +19,7 @@
             },
         },
         {
+            index: 1,
             itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg`,
             alt: 'loam-ibis',
             title: 'Ibis',
@@ -27,6 +29,7 @@
             },
         },
         {
+            index: 2,
             itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg`,
             alt: 'loam-manitou',
             title: 'Manitou',
@@ -36,6 +39,7 @@
             },
         },
         {
+            index: 3,
             itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg`,
             alt: 'loam-hayes-trp',
             title: 'Hayes / TPR',
@@ -45,6 +49,7 @@
             },
         },
         {
+            index: 4,
             itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg`,
             alt: 'loam-sdg',
             title: 'SDG',
@@ -54,6 +59,7 @@
             },
         },
         {
+            index: 5,
             itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg`,
             alt: 'loam-michelin',
             title: 'Michelin',
@@ -63,6 +69,7 @@
             },
         },
         {
+            index: 6,
             itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg`,
             alt: 'loam-ride-nf',
             title: 'Ride NF',
