@@ -128,42 +128,56 @@
                     v-if="slotProps.item.index === 0"
                     src="https://cdn.shoplightspeed.com/shops/638615/files/62978273/hd6-loam-ranger.svg"
                     :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
                 <img
                     v-if="slotProps.item.index === 1"
                     src="https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg"
                     :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
                 <img
                     v-if="slotProps.item.index === 2"
                     src="https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg"
                     :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
                 <img
                     v-if="slotProps.item.index === 3"
                     src="https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg"
                     :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
                 <img
                     v-if="slotProps.item.index === 4"
                     src="https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg"
                     :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
                 <img
                     v-if="slotProps.item.index === 5"
                     src="https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg"
                     :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
                 <img
                     v-if="slotProps.item.index === 6"
                     src="https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg"
                     :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
             </template>
