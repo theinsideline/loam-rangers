@@ -90,7 +90,7 @@
 
     const activeIndex = ref(0)
     const changeIndex = (item: number) => {
-        if (indicatorsPosition.value === 'left') {
+        if (indicatorsPosition.value === 'top') {
             activeIndex.value = item
         }
     }
@@ -103,7 +103,7 @@
     })
 </script>
 
-<template>
+<template lang="html">
     <section class="bike-block">
         <Galleria
             v-model:activeIndex="activeIndex"
@@ -116,11 +116,78 @@
             :transitionInterval="5000"
             :showIndicatorsOnItem="false"
         >
-            <template #item="{ item }">
+            <template #item="slotProps">
                 <img
-                    v-if="item.itemImageSrc"
-                    :src="item.itemImageSrc"
-                    :alt="item.alt"
+                    v-if="`https://cdn.shoplightspeed.com/shops/638615/files/62978273/hd6-loam-ranger.svg` === slotProps.item.itemImageSrc"
+                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978273/hd6-loam-ranger.svg"
+                    :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
+                    style="width: 100%; display: block; max-height: 549px"
+                />
+                <img
+                    v-if="
+                        `https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg` ===
+                        slotProps.item.itemImageSrc
+                    "
+                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg"
+                    :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
+                    style="width: 100%; display: block; max-height: 549px"
+                />
+                <img
+                    v-if="
+                        `https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg` ===
+                        slotProps.item.itemImageSrc
+                    "
+                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg"
+                    :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
+                    style="width: 100%; display: block; max-height: 549px"
+                />
+                <img
+                    v-if="
+                        `https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg` ===
+                        slotProps.item.itemImageSrc
+                    "
+                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg"
+                    :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
+                    style="width: 100%; display: block; max-height: 549px"
+                />
+                <img
+                    v-if="
+                        `https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg` === slotProps.item.itemImageSrc
+                    "
+                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg"
+                    :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
+                    style="width: 100%; display: block; max-height: 549px"
+                />
+                <img
+                    v-if="
+                        `https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg` ===
+                        slotProps.item.itemImageSrc
+                    "
+                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg"
+                    :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
+                    style="width: 100%; display: block; max-height: 549px"
+                />
+                <img
+                    v-if="
+                        `https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg` ===
+                        slotProps.item.itemImageSrc
+                    "
+                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg"
+                    :alt="slotProps.item.alt"
+                    decoding="async"
+                    referrerpolicy="unsafe-url"
                     style="width: 100%; display: block; max-height: 549px"
                 />
             </template>
@@ -128,10 +195,11 @@
                 <div
                     v-if="images[index].button.link"
                     class="gallery_button"
+                    @click="changeIndex(0)"
                     @mouseover="() => changeIndex(index)"
                     @mouseleave="() => changeIndex(0)"
                 >
-                    <a :href="images[index].button.link">{{ images[index].title }}</a>
+                    <a :href="images[index].button.link" @click="changeIndex(0)">{{ images[index].title }}</a>
                 </div>
             </template>
         </Galleria>
