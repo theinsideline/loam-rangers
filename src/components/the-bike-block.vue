@@ -3,15 +3,19 @@
     import Galleria from 'primevue/galleria'
     import { useWindowSize } from '@vueuse/core'
     import { computed } from 'vue'
-    import LoamBikeIcon from '~/assets/icons/loam-bike.vue'
+    import LoamBikeIcon from '@/assets/icons/loam-bike.vue'
+    import LoamHayesTrpIcon from '@/assets/icons/loam-hayes-trp.vue'
+    import LoamIbisIcon from '@/assets/icons/loam-ibis.vue'
+    import LoamManitouIcon from '@/assets/icons/loam-manitou.vue'
+    import LoamRideNFIcon from '@/assets/icons/loam-ride-nf.vue'
+    import LoamSdgIcon from '@/assets/icons/loam-sdg.vue'
+    import LoamMichelinIcon from '@/assets/icons/loam-michelin.vue'
 
     const { width } = useWindowSize()
 
     const images = ref([
         {
             index: 0,
-            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978273/hd6-loam-ranger.svg`,
-            alt: 'loam-bike',
             title: 'Bike',
             button: {
                 title: '',
@@ -20,8 +24,6 @@
         },
         {
             index: 1,
-            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg`,
-            alt: 'loam-ibis',
             title: 'Ibis',
             button: {
                 title: 'Ibis',
@@ -30,8 +32,6 @@
         },
         {
             index: 2,
-            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg`,
-            alt: 'loam-manitou',
             title: 'Manitou',
             button: {
                 title: 'Manitou',
@@ -40,8 +40,6 @@
         },
         {
             index: 3,
-            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg`,
-            alt: 'loam-hayes-trp',
             title: 'Hayes / TPR',
             button: {
                 title: 'Hayes / TPR',
@@ -50,8 +48,6 @@
         },
         {
             index: 4,
-            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg`,
-            alt: 'loam-sdg',
             title: 'SDG',
             button: {
                 title: 'SDG',
@@ -60,8 +56,6 @@
         },
         {
             index: 5,
-            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg`,
-            alt: 'loam-michelin',
             title: 'Michelin',
             button: {
                 title: 'Michelin',
@@ -70,8 +64,6 @@
         },
         {
             index: 6,
-            itemImageSrc: `https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg`,
-            alt: 'loam-ride-nf',
             title: 'Ride NF',
             button: {
                 title: 'Ride NF',
@@ -124,72 +116,13 @@
             :showIndicatorsOnItem="false"
         >
             <template #item="slotProps">
-                <LoamBikeIcon v-if="slotProps.item.index === 0" />
-                <img
-                    v-if="
-                        slotProps.item.itemImageSrc ===
-                        'https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg'
-                    "
-                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978266/hd6-loam-ranger-ibis.svg"
-                    :alt="slotProps.item.alt"
-                    decoding="async"
-                    referrerpolicy="unsafe-url"
-                    style="width: 100%; display: block; max-height: 549px"
-                />
-                <img
-                    v-if="
-                        slotProps.item.itemImageSrc ===
-                        'https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg'
-                    "
-                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978267/hd6-loam-ranger-manitou.svg"
-                    :alt="slotProps.item.alt"
-                    decoding="async"
-                    referrerpolicy="unsafe-url"
-                    style="width: 100%; display: block; max-height: 549px"
-                />
-                <img
-                    v-if="
-                        slotProps.item.itemImageSrc ===
-                        'https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg'
-                    "
-                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978265/hd6-loam-ranger-hayes-tpr.svg"
-                    :alt="slotProps.item.alt"
-                    decoding="async"
-                    referrerpolicy="unsafe-url"
-                    style="width: 100%; display: block; max-height: 549px"
-                />
-                <img
-                    v-if="
-                        slotProps.item.itemImageSrc === 'https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg'
-                    "
-                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978272/hd6-loam-ranger-sdg.svg"
-                    :alt="slotProps.item.alt"
-                    decoding="async"
-                    referrerpolicy="unsafe-url"
-                    style="width: 100%; display: block; max-height: 549px"
-                />
-                <img
-                    v-if="
-                        slotProps.item.itemImageSrc ===
-                        'https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg'
-                    "
-                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978269/hd6-loam-ranger-michelin.svg"
-                    :alt="slotProps.item.alt"
-                    decoding="async"
-                    referrerpolicy="unsafe-url"
-                    style="width: 100%; display: block; max-height: 549px"
-                />
-                <img
-                    v-if="
-                        slotProps.item.itemImageSrc ===
-                        'https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg'
-                    "
-                    src="https://cdn.shoplightspeed.com/shops/638615/files/62978271/hd6-loam-ranger-ride-nf.svg"
-                    :alt="slotProps.item.alt"
-                    decoding="async"
-                    referrerpolicy="unsafe-url"
-                    style="width: 100%; display: block; max-height: 549px"
-                />
+                <LoamBikeIcon v-if="slotProps.item.index === 0" class="icon" />
+                <LoamIbisIcon v-if="slotProps.item.index === 1" class="icon" />
+                <LoamManitouIcon v-if="slotProps.item.index === 2" class="icon" />
+                <LoamHayesTrpIcon v-if="slotProps.item.index === 3" class="icon" />
+                <LoamSdgIcon v-if="slotProps.item.index === 4" class="icon" />
+                <LoamMichelinIcon  v-if="slotProps.item.index === 5" class="icon" />
+                <LoamRideNFIcon v-if="slotProps.item.index === 6" class="icon" />
             </template>
             <template #indicator="{ index }">
                 <div
@@ -210,6 +143,12 @@
     .bike-block {
         :deep(.p-galleria-item-container) {
             width: 100%;
+
+            .icon {
+                width: 100%;
+                display: block;
+                max-height: 549px;
+            }
         }
 
         :deep(.p-galleria-indicators) {

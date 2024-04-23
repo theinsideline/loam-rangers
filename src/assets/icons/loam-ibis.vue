@@ -1,140 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<template>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1660 940">
   <defs>
-    <style>
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26 {
-        fill: none;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-7, .cls-8, .cls-27, .cls-28, .cls-29, .cls-30, .cls-10, .cls-12, .cls-31, .cls-13, .cls-32, .cls-15, .cls-16, .cls-33, .cls-18, .cls-19, .cls-21, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-26 {
-        stroke: #fff;
-      }
-
-      .cls-1, .cls-2, .cls-4, .cls-39, .cls-6, .cls-7, .cls-9, .cls-27, .cls-28, .cls-11, .cls-12, .cls-40, .cls-31, .cls-13, .cls-14, .cls-41, .cls-32, .cls-15, .cls-42, .cls-43, .cls-44, .cls-17, .cls-18, .cls-20, .cls-45, .cls-21, .cls-22, .cls-46, .cls-24, .cls-36, .cls-37, .cls-38, .cls-47, .cls-26 {
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .cls-1, .cls-16 {
-        stroke-width: 6px;
-      }
-
-      .cls-2 {
-        stroke-width: 6px;
-      }
-
-      .cls-3, .cls-48, .cls-8, .cls-49, .cls-50, .cls-30, .cls-10, .cls-51, .cls-16, .cls-33, .cls-52, .cls-19, .cls-35, .cls-23, .cls-25, .cls-53 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-3, .cls-11, .cls-43, .cls-18, .cls-52, .cls-45, .cls-36 {
-        stroke-width: 2px;
-      }
-
-      .cls-4, .cls-9, .cls-42, .cls-45, .cls-22, .cls-23, .cls-47 {
-        stroke: #070808;
-      }
-
-      .cls-39 {
-        stroke-width: 1px;
-      }
-
-      .cls-39, .cls-48, .cls-6, .cls-49, .cls-50, .cls-11, .cls-40, .cls-51, .cls-54, .cls-55, .cls-14, .cls-41, .cls-43, .cls-44, .cls-17, .cls-52, .cls-20, .cls-46, .cls-24, .cls-25, .cls-53 {
-        stroke: #ababab;
-      }
-
-      .cls-39, .cls-27, .cls-50, .cls-29, .cls-30, .cls-51, .cls-54, .cls-55, .cls-56, .cls-32, .cls-33, .cls-34, .cls-46, .cls-36, .cls-37, .cls-38, .cls-53 {
-        fill: #ababab;
-      }
-
-      .cls-48, .cls-49, .cls-40, .cls-41, .cls-43, .cls-44, .cls-52, .cls-45, .cls-57 {
-        fill: #fff;
-      }
-
-      .cls-48, .cls-28, .cls-24 {
-        stroke-width: 1.5px;
-      }
-
-      .cls-5, .cls-56, .cls-58, .cls-59, .cls-57 {
-        stroke-width: 0px;
-      }
-
-      .cls-6, .cls-8, .cls-50, .cls-12, .cls-40, .cls-22, .cls-25 {
-        stroke-width: .5px;
-      }
-
-      .cls-7 {
-        stroke-width: 4.5px;
-      }
-
-      .cls-49, .cls-9, .cls-30, .cls-19, .cls-20, .cls-53, .cls-26 {
-        stroke-width: .75px;
-      }
-
-      .cls-28, .cls-31, .cls-42, .cls-59, .cls-35, .cls-47 {
-        fill: #070808;
-      }
-
-      .cls-29 {
-        stroke-miterlimit: 10;
-        stroke-width: .75px;
-      }
-
-      .cls-54 {
-        stroke-miterlimit: 10;
-        stroke-width: 1px;
-      }
-
-      .cls-55 {
-        stroke-miterlimit: 10;
-        stroke-width: 1px;
-      }
-
-      .cls-58 {
-        fill: #010101;
-      }
-
-      .cls-32 {
-        stroke-width: 1px;
-      }
-
-      .cls-15 {
-        stroke-width: 4px;
-      }
-
-      .cls-42 {
-        stroke-width: 1px;
-      }
-
-      .cls-44 {
-        stroke-width: 2px;
-      }
-
-      .cls-17 {
-        stroke-width: 2.5px;
-      }
-
-      .cls-21 {
-        stroke-width: 5px;
-      }
-
-      .cls-34 {
-        stroke-miterlimit: 10;
-        stroke-width: 1px;
-      }
-
-      .cls-23 {
-        stroke-width: 3px;
-      }
-
-      .cls-37 {
-        stroke-width: 2px;
-      }
-
-      .cls-38 {
-        stroke-width: 2px;
-      }
-    </style>
+    
   </defs>
   <g id="Brkaes_Left_Crank_Arm" data-name="Brkaes Left Crank Arm">
     <path class="cls-56" d="M1235.75,613.07l-16.92,8.52c-3.38,1.7-7.49.35-9.21-3.02l-104.72-205.47,30.22-15.21,103.67,205.96c1.71,3.39.34,7.52-3.05,9.23h.01Z"/>
@@ -1598,3 +1465,139 @@
     <path class="cls-58" d="M399.54,260.09v68.85h68.85v-68.85h-68.85,0ZM410.85,267.82l27.41,27.41c.2.22.2.59,0,.79l-3.33,3.33c-.22.22-.58.22-.79,0l-22.85-22.85c-.28-.28-.44-.65-.44-1.06v-7.64.02ZM427.3,314.85l-.03-.03c-.79.81-1.56,1.61-2.34,2.4-.84.87-2.84,2.99-3.52,3.74-.16.17-.37.26-.61.26h-7.26c.92-.98,1.81-1.96,2.74-2.93,1-1.04,1.99-2.09,2.96-3.05.2-.22.2-.55,0-.76-1.79-1.84-3.55-3.65-5.3-5.42-1.29-1.32-2.21-2.87-2.62-4.68-.17-.79-.26-1.61-.37-2.4-.05-.41-.08-.83-.08-1.23v-3.07c1.65,1.64,3.32,3.27,4.97,4.92,3.76,3.76,7.53,7.53,11.27,11.28.06.06.12.14.19.2.2.22.2.55,0,.76h0ZM463.51,284.43l-.3.34c-.17.14-.39.16-.53.03-3.69-2.9-7.96-4.61-12.78-4.83-3.26-.14-6.2,0-7.34,2.38-.17.37-.58,1.7.56,2.87l4.89,4.89c1.32,1.32,2.18,3.07,2.29,4.96.14,2.18-.65,4.24-2.18,5.77l-8.31,8.31c-1.32,1.32-3.09,2.18-4.96,2.29-2.18.14-4.24-.65-5.77-2.18l-17.84-17.83c-.28-.28-.44-.65-.44-1.06v-7.64l22.39,22.39c.36.36.87.53,1.4.47.39-.05.73-.25,1.01-.53l8.38-8.38c.64-.64.64-1.7,0-2.35l-5-5c-2.48-2.48-3.16-6-1.82-9.21,1.32-3.23,4.92-5.3,8.51-5.36,2.45-.05,3.43.48,4.1,1.09.28.25.55.5.81.72.48.44,1.06.76,1.68.98,5.36,1.79,8.27,3.8,11.19,6.36.16.14.17.37.03.53h.03Z"/>
   </g>
 </svg>
+</template>
+
+<style scoped>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-7, .cls-8, .cls-27, .cls-28, .cls-29, .cls-30, .cls-10, .cls-12, .cls-31, .cls-13, .cls-32, .cls-15, .cls-16, .cls-33, .cls-18, .cls-19, .cls-21, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-26 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-39, .cls-6, .cls-7, .cls-9, .cls-27, .cls-28, .cls-11, .cls-12, .cls-40, .cls-31, .cls-13, .cls-14, .cls-41, .cls-32, .cls-15, .cls-42, .cls-43, .cls-44, .cls-17, .cls-18, .cls-20, .cls-45, .cls-21, .cls-22, .cls-46, .cls-24, .cls-36, .cls-37, .cls-38, .cls-47, .cls-26 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-16 {
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-48, .cls-8, .cls-49, .cls-50, .cls-30, .cls-10, .cls-51, .cls-16, .cls-33, .cls-52, .cls-19, .cls-35, .cls-23, .cls-25, .cls-53 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-11, .cls-43, .cls-18, .cls-52, .cls-45, .cls-36 {
+        stroke-width: 2px;
+      }
+
+      .cls-4, .cls-9, .cls-42, .cls-45, .cls-22, .cls-23, .cls-47 {
+        stroke: #070808;
+      }
+
+      .cls-39 {
+        stroke-width: 1px;
+      }
+
+      .cls-39, .cls-48, .cls-6, .cls-49, .cls-50, .cls-11, .cls-40, .cls-51, .cls-54, .cls-55, .cls-14, .cls-41, .cls-43, .cls-44, .cls-17, .cls-52, .cls-20, .cls-46, .cls-24, .cls-25, .cls-53 {
+        stroke: #ababab;
+      }
+
+      .cls-39, .cls-27, .cls-50, .cls-29, .cls-30, .cls-51, .cls-54, .cls-55, .cls-56, .cls-32, .cls-33, .cls-34, .cls-46, .cls-36, .cls-37, .cls-38, .cls-53 {
+        fill: #ababab;
+      }
+
+      .cls-48, .cls-49, .cls-40, .cls-41, .cls-43, .cls-44, .cls-52, .cls-45, .cls-57 {
+        fill: #fff;
+      }
+
+      .cls-48, .cls-28, .cls-24 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-5, .cls-56, .cls-58, .cls-59, .cls-57 {
+        stroke-width: 0px;
+      }
+
+      .cls-6, .cls-8, .cls-50, .cls-12, .cls-40, .cls-22, .cls-25 {
+        stroke-width: .5px;
+      }
+
+      .cls-7 {
+        stroke-width: 4.5px;
+      }
+
+      .cls-49, .cls-9, .cls-30, .cls-19, .cls-20, .cls-53, .cls-26 {
+        stroke-width: .75px;
+      }
+
+      .cls-28, .cls-31, .cls-42, .cls-59, .cls-35, .cls-47 {
+        fill: #070808;
+      }
+
+      .cls-29 {
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-54 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+
+      .cls-55 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+
+      .cls-58 {
+        fill: #010101;
+      }
+
+      .cls-32 {
+        stroke-width: 1px;
+      }
+
+      .cls-15 {
+        stroke-width: 4px;
+      }
+
+      .cls-42 {
+        stroke-width: 1px;
+      }
+
+      .cls-44 {
+        stroke-width: 2px;
+      }
+
+      .cls-17 {
+        stroke-width: 2.5px;
+      }
+
+      .cls-21 {
+        stroke-width: 5px;
+      }
+
+      .cls-34 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+
+      .cls-23 {
+        stroke-width: 3px;
+      }
+
+      .cls-37 {
+        stroke-width: 2px;
+      }
+
+      .cls-38 {
+        stroke-width: 2px;
+      }
+    </style>
