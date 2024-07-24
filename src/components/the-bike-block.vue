@@ -39,9 +39,9 @@
         },
         {
             index: 3,
-            title: 'Hayes / TPR',
+            title: 'Hayes / TRP',
             button: {
-                title: 'Hayes / TPR',
+                title: 'Hayes / TRP',
                 link: 'https://www.theinsideline.ca/tags/hayes-trp/',
             },
         },
